@@ -2,7 +2,6 @@ import React from "react"
 import "../../CSS/main.css"
 
 
-
 function StartPage() {
 
     //document.createElement("circle_bound")
@@ -33,7 +32,7 @@ function StartPage() {
             <h2>GiftGiwa</h2>
             <p className="mono" id="SWE">software engineer.</p>
 
-            <button id="response" onClick={createRipple} ></button>
+            {/* <button id="response" onClick={createRipple} ></button> */}
 
             <div className="mono" id="circle_bound"></div>
 
