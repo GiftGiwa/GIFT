@@ -28,9 +28,13 @@ h2 {
   -webkit-user-select: none;
 }
 
+/* Menlo Font to be use on site */
+
 .mono {
   font-family: Menlo;
 }
+
+/* [DOCUMENTATION] text */
 
 #doc {
   font-size:12px;
@@ -41,6 +45,8 @@ h2 {
   margin:0;
   color:rgba(0, 0, 0, 0.5)
 }
+
+/* software engineer. text */
 
 #SWE {
   font-size:24px;
@@ -64,6 +70,8 @@ h2 {
   z-index:1;
   animation: move 5s ease infinite;
 }
+
+/* clickable circle */
 
 #response {
   width: 200vw;
