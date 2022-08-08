@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+html, body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+body {
+  background-color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* height: 100%; */
+  top:0;
+}
+
+h2 {
+  z-index:4;
+  font-family:'Poppins';
+  font-size:92px;
+  color:black;
+  display:inline-block;
+  padding:0;
+  margin:0px;
+  left:40px;
+  position: absolute;
+  -webkit-user-select: none;
+}
+
+.mono {
+  font-family: Menlo;
+}
+
+#doc {
+  font-size:12px;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  z-index:2;
+  margin:0;
+  color:rgba(0, 0, 0, 0.5)
+}
+
+#SWE {
+  font-size:24px;
+  color:rgba(0, 0, 0, 1);
+  position:absolute;
+  display:inline-block;
+  z-index: 4;
+  top: 120px;
+  left: 40px;
+  margin:0;
+}
+
+#top-gradient {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top: 0px;
+  margin:0;
+  background: linear-gradient(155deg, #FFE600 1.26%, #00FBFF 97.48%);
+  background-size: 200% 100%;
+  z-index:1;
+  animation: move 5s ease infinite;
+}
+
+#response {
+  width: 200vw;
+  height: 200vw;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  z-index: 2;
+  top: 300px;
+  border-radius: 50%;
+  border: 0px;
+  margin:auto;
+  left:-50%;
+  overflow:hidden;
+  animation: pulse 2s ease infinite;
+}
+
+#label {
+  position:absolute;
+  margin:auto;
+
+}
+
+@keyframes pulse {
+  0% {background-color: rgba(255, 255, 255, 0.05);}
+  50% {background-color: rgba(255, 255, 255, 0.15);}
+  100% {background-color: rgba(255, 255, 255, 0.05);}
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation:ripple 4000ms ease-out;
+  background-color: rgb(27, 27, 27);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+  }
+}
+
+/* Top Gradient Movement */
+
+@keyframes move {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Text Highlight Color */
+
+::selection {
+  background:rgba(0, 0, 0, 0.2);
+}
