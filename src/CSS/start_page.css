@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-
 html, body {
   margin:0;
   padding:0;
@@ -59,6 +58,8 @@ h2 {
   margin:0;
 }
 
+/* intial background gradient */
+
 #top-gradient {
   position: absolute;
   width: 100%;
@@ -74,31 +75,31 @@ h2 {
 /* clickable circle */
 
 #response {
-  width: 200vw;
-  height: 200vw;
-  background-color: rgba(255, 255, 255, 0.15);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.0);
   position: absolute;
   z-index: 2;
-  top: 300px;
-  border-radius: 50%;
+  top: 0px;
   border: 0px;
   margin:auto;
-  left:-50%;
-  overflow:hidden;
-  animation: pulse 2s ease infinite;
+  font-size:12px;
+  color:rgba(0, 0, 0, 0.5)
 }
 
-#label {
-  position:absolute;
+/* gray background rectangle */
+
+#bg_rect {
+  width: 100vw;
   margin:auto;
+  height: 4315px;
+  z-index: 4;
+  background-color: rgb(27, 27, 27);
+  position: absolute;
+  top: 90vh;
 
 }
 
-@keyframes pulse {
-  0% {background-color: rgba(255, 255, 255, 0.05);}
-  50% {background-color: rgba(255, 255, 255, 0.15);}
-  100% {background-color: rgba(255, 255, 255, 0.05);}
-}
 
 span.ripple {
   position: absolute;

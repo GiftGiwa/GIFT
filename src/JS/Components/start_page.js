@@ -1,28 +1,18 @@
-import React from "react"
-import "../../CSS/main.css"
+import "../../CSS/start_page.css"
+import anime from "../../../node_modules/animejs/lib/anime.es.js"
 
 
 function StartPage() {
 
-    //document.createElement("circle_bound")
-
-    function createRipple(event) {
-        const button = event.currentTarget
-
-        const circle = document.createElement("span")
-        const diameter = Math.max(button.clientWidth, button.clientHeight)
-        const radius = diameter / 2
-
-        circle.style.width = circle.style.height = `${diameter}px`;
-        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
-        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-        circle.classList.add("ripple");
-
-        button.appendChild(circle)
-
-        
+    function slide(event) {
+        console.log("click!")
+        anime({
+            targets: "#response",
+            translateY: -50,
+            easing: "easeOutSine",
+            duration: 1500
+        })
     }
-
 
     return (
         <div id = "start">
@@ -32,11 +22,11 @@ function StartPage() {
             <h2>GiftGiwa</h2>
             <p className="mono" id="SWE">software engineer.</p>
 
-            {/* <button id="response" onClick={createRipple} ></button> */}
+            <button className="mono" id = "response" onClick = {slide}>[click anywhere to proceed]</button>
 
             <div className="mono" id="circle_bound"></div>
 
-            <p id="label">[click here to proceed]</p>
+            <div id="bg_rect"></div>
     
         </div>   
     )
