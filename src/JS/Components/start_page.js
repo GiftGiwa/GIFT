@@ -6,12 +6,17 @@ function StartPage() {
 
     function slide(event) {
         console.log("click!")
-        anime({
-            targets: "#response",
-            translateY: -50,
-            easing: "easeOutSine",
-            duration: 1500
-        })
+
+        function move_up(id) {
+            anime({
+                targets: id,
+                translateY: -1 * window.innerHeight,
+                easing: "easeOutSine",
+                duration: 1000
+            })
+        }
+        //move_up('#response')
+        move_up('#bg_rect')
     }
 
     return (
