@@ -52,10 +52,23 @@ h2 {
   color:rgba(0, 0, 0, 1);
   position:absolute;
   display:inline-block;
-  z-index: 4;
+  z-index: 3;
   top: 120px;
   left: 40px;
   margin:0;
+}
+
+/* [click anywhere to proceed label] */
+
+#label {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  z-index:4;
+  width: 100%;
+  font-size: 12px;
+  top: 50%;
+  text-align: center;
+  margin: 0;
 }
 
 /* intial background gradient */
@@ -79,7 +92,7 @@ h2 {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.0);
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   top: 0px;
   border: 0px;
   margin:auto;
@@ -97,24 +110,30 @@ h2 {
   background-color: rgb(27, 27, 27);
   position: absolute;
   top: 100vh;
-
 }
 
+/* static/moving grids */
 
-span.ripple {
+#static {
+  width: 5040px;
+  height: 6000px;
   position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  animation:ripple 4000ms ease-out;
-  background-color: rgb(27, 27, 27);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  z-index: 5;
+  top:0px;
+  margin:0;
+  padding:0;
+  left:-50%;
 }
 
-@keyframes ripple {
-  to {
-    transform: scale(4);
-  }
+#moving {
+    width: 5040px;
+    height: 6000px;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    margin:0;
+    padding:0;
+    left:-50%;
 }
 
 /* Top Gradient Movement */
