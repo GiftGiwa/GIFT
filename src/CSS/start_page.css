@@ -22,6 +22,7 @@ h2 {
   display:inline-block;
   padding:0;
   margin:0px;
+  top:30px;
   left:40px;
   position: absolute;
   -webkit-user-select: none;
@@ -42,6 +43,7 @@ h2 {
   right: 10px;
   z-index:2;
   margin:0;
+
   color:rgba(0, 0, 0, 0.5)
 }
 
@@ -51,9 +53,8 @@ h2 {
   font-size:24px;
   color:rgba(0, 0, 0, 1);
   position:absolute;
-  display:inline-block;
   z-index: 3;
-  top: 120px;
+  top: 150px;
   left: 40px;
   margin:0;
 }
@@ -64,11 +65,13 @@ h2 {
   position: absolute;
   color: rgba(0, 0, 0, 0.5);
   z-index:4;
-  width: 100%;
   font-size: 12px;
-  top: 50vh;
-  text-align: center;
   margin: 0;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /* intial background gradient */
@@ -121,19 +124,20 @@ h2 {
   z-index: 5;
   top:0px;
   margin:0;
-  padding:0;
-  left:-50%;
+  
 }
 
 #moving {
-    width: 5040px;
-    height: 6000px;
-    position: absolute;
-    z-index: 5;
-    top: 0px;
-    margin:0;
-    padding:0;
-    left:-50%;
+  width: 5040px;
+  height: 6000px;
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  margin:0;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) ;
 }
 
 /* Top Gradient Movement */
@@ -154,4 +158,12 @@ h2 {
 
 ::selection {
   background:rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design Rules */
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 15vw;
+  }
 }

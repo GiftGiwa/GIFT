@@ -12,10 +12,9 @@ function StartPage() {
                 targets: id,
                 translateY: -1 * window.innerHeight,
                 easing: "easeOutExpo",
-                duration: 800
+                duration: 1500
             })
         }
-
         move_up('#bg_rect')
     }
 
@@ -28,6 +27,7 @@ function StartPage() {
 
     return (
         <div id = "start">
+
             <div id="top-gradient"></div>
         
             <p className="mono" id="doc">[DOCUMENTATION]</p>
@@ -35,7 +35,7 @@ function StartPage() {
             <p className="mono" id="SWE">software engineer.</p>
             <p className="mono" id="label">[click anywhere to proceed]</p>
 
-            <button className="mono" id = "response" onClick = {slide}></button>
+            <div className="mono" id = "response" onClick = {slide}></div>
 
             <div className="mono" id="circle_bound"></div>
 
