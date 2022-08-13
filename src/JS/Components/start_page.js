@@ -1,10 +1,10 @@
 import React from "react"
 import "../../CSS/start_page.css"
 import anime from "../../../node_modules/animejs/lib/anime.es.js"
-import { ReactComponent as Grid } from './Grid.svg'
+import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 
 
-function StartPage() {
+function Page() {
 
     function slide() {
 
@@ -46,7 +46,6 @@ function StartPage() {
             });
 
             setTimeout(function () {
-
                 document.getElementById("bg_rect").style.top = "0px"
                 document.body.height = 4315
 
@@ -87,4 +86,4 @@ function StartPage() {
     )
 }
 
-export default StartPage;
+export default Page;

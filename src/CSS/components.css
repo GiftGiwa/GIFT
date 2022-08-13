@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.headings {
+    font-family: Menlo;
+    font-weight: 400;
+    font-size: 48px;
+    background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    z-index:7;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    dispay: block;
+}

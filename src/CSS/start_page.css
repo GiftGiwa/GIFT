@@ -4,7 +4,6 @@ html, body {
   margin:0;
   padding:0;
   overflow-x:hidden;
-  /* overflow-y:hidden; */
   overflow-y:hidden;
 }
 
@@ -12,7 +11,6 @@ body {
   background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100%; */
   top:0;
 }
 
@@ -57,7 +55,7 @@ h2 {
 /* software engineer. text */
 
 #SWE {
-  font-size:24px;
+  font-size:20px;
   color:rgba(0, 0, 0, 1);
   position:absolute;
   z-index: 3;
@@ -136,8 +134,6 @@ h2 {
 /* static/moving grids */
 
 #static {
-  /* width: 5040px;
-  height: calc(4315px - 100vh); 6000 px */
   position: absolute;
   z-index: 5;
   top:0px;
@@ -184,5 +180,9 @@ h2 {
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 15vw;
+  }
+
+  #bg_rect_2 {
+    height: 5015px;
   }
 }

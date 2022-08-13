@@ -1,0 +1,9 @@
+#aboutMe {
+    position: absolute;
+    height: 2000px;
+    z-index:7;
+    top:100px;
+    left:100px;
+    width: calc(100vw - 150px);
+    
+}

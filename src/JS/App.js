@@ -1,11 +1,12 @@
 import React from "react"
-import StartPage from "./Components/start_page"
-
+import Page from "./Components/start_page"
+import AboutMe from "./Components/about_me"
 
 function App() {
   return (
     <>
-      <StartPage />
+      <Page />
+      <AboutMe />
 
     </>
   )
