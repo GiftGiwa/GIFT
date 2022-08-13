@@ -20,17 +20,40 @@ function StartPage() {
                 document.body.height = 4315
                 document.getElementById("html").height = 4315
                 document.getElementById("html").style.overflowY = "scroll"
+                document.getElementById("html").style.overflowX = "hidden"
             }, 1500)
         }
         move_up('#bg_rect')
+       
+        // anime({
+        //     targets: '#moving',
+        //     easing: 'easeInOutSine',
+        //     loop: true,
+        //     translateX: [
+        //         {duration: 1500, value: '+=80px',},
+        //         {duration: 1500, value: '+=0px',},
+        //         {duration: 1500, value: '-=80px',},
+        //         {duration: 1500, value: '+=0px',
+        //         },
+        //       ],
+        //       translateY: [
+        //         {duration: 1500, value: '+=0px',},
+        //         {duration: 1500, value: '+=80px',},
+        //         {duration: 1500, value: '+=0px',},
+        //         {duration: 1500, value: '-=80px',},
+        //       ],
+        //     duration: 3000
+        // });
+
+        anime({
+            targets: '#moving',
+            easing: "linear",
+            translateY: 80,
+            loop:true,
+            duration: 2000,
+        });
     }
 
-    anime({
-        targets: "#moving",
-        translateY: 50,
-        easing: "easeOutExpo",
-        duration: 1500
-    })
 
     return (
         <div id = "start">

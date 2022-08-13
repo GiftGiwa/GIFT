@@ -138,7 +138,6 @@ h2 {
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  overflow-x: hidden;
 }
 
 #moving {
@@ -146,23 +145,13 @@ h2 {
   height: 4315px;
   position: absolute;
   z-index: 5;
-  top: 0px;
+  top:0px;
   margin:0;
   left: 50%;
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  overflow-x: hidden;
-  /* animation: loop 5s ease infinite; */
 }
-
-/* @keyframes loop {
-  0%   {transform: translateX(0px)}
-  25%  {transform: translateX(80px)}
-  50%  {transform: translateY(80px)}
-  75%  {transform: translateX(-80px)}
-  100% {transform: translateY(-80px)}
-} */
 
 /* Top Gradient Movement */
 
