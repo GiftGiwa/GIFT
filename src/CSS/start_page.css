@@ -3,7 +3,8 @@
 html, body {
   margin:0;
   padding:0;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 body {
@@ -108,6 +109,16 @@ h2 {
 #bg_rect {
   width: 100vw;
   margin:auto;
+  height: calc(4315px + 100vh);
+  z-index: 4;
+  background-color: rgb(27, 27, 27);
+  position: absolute;
+  top: 100vh;
+}
+
+#bg_rect_2 {
+  width: 100vw;
+  margin:auto;
   height: 4315px;
   z-index: 4;
   background-color: rgb(27, 27, 27);
@@ -124,7 +135,11 @@ h2 {
   z-index: 5;
   top:0px;
   margin:0;
-  
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow-x: hidden;
 }
 
 #moving {
@@ -137,7 +152,8 @@ h2 {
   left: 50%;
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%) ;
+  transform: translateX(-50%);
+  overflow-x: hidden;
 }
 
 /* Top Gradient Movement */

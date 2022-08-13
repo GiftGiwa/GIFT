@@ -1,3 +1,4 @@
+import React from "react"
 import "../../CSS/start_page.css"
 import anime from "../../../node_modules/animejs/lib/anime.es.js"
 import { ReactComponent as Grid } from './Grid.svg'
@@ -14,6 +15,12 @@ function StartPage() {
                 easing: "easeOutExpo",
                 duration: 1500
             })
+            setTimeout(function () {
+                document.getElementById("bg_rect").style.top = "0px"
+                document.body.height = 4315
+                document.getElementById("html").height = 4315
+                document.getElementById("html").style.overflowY = "scroll"
+            }, 1500)
         }
         move_up('#bg_rect')
     }
@@ -41,8 +48,10 @@ function StartPage() {
 
             <div id="bg_rect"></div>
 
+            <div id="bg_rect_2"></div>
+
             <Grid id = "static" />
-            <Grid id = "moving" />
+            {/* <Grid id = "moving" /> */}
     
         </div>   
     )

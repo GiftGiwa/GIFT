@@ -1,3 +1,4 @@
+import React from "react"
 import StartPage from "./Components/start_page"
 
 
