@@ -34,6 +34,13 @@ h2 {
 
 .mono {font-family: Menlo;}
 
+/* div for starting page + background for remainder of page */
+
+#start {
+  height: 4315px;
+  overflow:hidden;
+}
+
 /* [DOCUMENTATION] text */
 
 #doc {
@@ -108,7 +115,7 @@ h2 {
 #bg_rect {
   width: 100vw;
   margin:auto;
-  height: calc(4315px + 100vh);
+  height: calc(4315px);
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
@@ -118,18 +125,19 @@ h2 {
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: calc(4315px - 100vh);
+  height: 4315px;
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
   top: 100vh;
+  overflow: hidden;
 }
 
 /* static/moving grids */
 
 #static {
-  width: 5040px;
-  height: 4315px; /* 6000 px */
+  /* width: 5040px;
+  height: calc(4315px - 100vh); 6000 px */
   position: absolute;
   z-index: 5;
   top:0px;
@@ -141,8 +149,6 @@ h2 {
 }
 
 #moving {
-  width: 5040px;
-  height: 4315px;
   position: absolute;
   z-index: 5;
   top:0px;
