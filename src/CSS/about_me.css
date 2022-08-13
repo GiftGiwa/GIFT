@@ -3,7 +3,11 @@
     height: 2000px;
     z-index:7;
     top:100px;
-    left:100px;
+    left:200px;
     width: calc(100vw - 150px);
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     
 }

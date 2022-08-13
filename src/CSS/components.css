@@ -8,11 +8,17 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position:absolute;
     z-index:7;
+    margin: 5px;
 }
 
 .body {
     font-family: 'Inter', sans-serif;
-    dispay: block;
+    display: block;
+    color: #c0c0c0;
 }
+
+.body::selection {
+    background:#c0c0c0;
+    color: #1c1c1c;
+  }
