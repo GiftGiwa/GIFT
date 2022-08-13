@@ -17,7 +17,7 @@ function StartPage() {
         });
 
         function move_up() {
-            // document.getElementById("bg_rect_2").style.top = "0px"
+
             anime({
                 targets: '#bg_rect_2',
                 translateY: -1 * window.innerHeight,
@@ -46,7 +46,7 @@ function StartPage() {
             });
 
             setTimeout(function () {
-                //document.getElementById("bg_rect_2").style.top = "0px"
+
                 document.getElementById("bg_rect").style.top = "0px"
                 document.body.height = 4315
 
@@ -58,27 +58,6 @@ function StartPage() {
         }
 
         move_up()
-       
-        // anime({
-        //     targets: '#moving',
-        //     easing: 'easeOutSine',
-        //     loop: true,
-        //     translateX: [
-        //         {duration: 1500, value: '+=80px',},
-        //         {duration: 1500, value: '+=0px',},
-        //         {duration: 1500, value: '-=80px',},
-        //         {duration: 1500, value: '+=0px',
-        //         },
-        //       ],
-        //       translateY: [
-        //         {duration: 1500, value: '+=0px',},
-        //         {duration: 1500, value: '+=80px',},
-        //         {duration: 1500, value: '+=0px',},
-        //         {duration: 1500, value: '-=80px',},
-        //       ],
-        //     duration: 3000
-        // });
-
         
     }
 
@@ -101,12 +80,8 @@ function StartPage() {
 
             <div id="bg_rect_2">
                 <Grid id = "static" />
-                <Grid id = "moving" />
-    
+                <Grid id = "moving" />   
             </div>
-
-            {/* <Grid id = "static" />
-            <Grid id = "moving" /> */}
     
         </div>   
     )
