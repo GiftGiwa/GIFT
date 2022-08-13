@@ -4,6 +4,7 @@ html, body {
   margin:0;
   padding:0;
   overflow-x:hidden;
+  /* overflow-y:hidden; */
   overflow-y:hidden;
 }
 
@@ -31,9 +32,7 @@ h2 {
 
 /* Menlo Font to be use on site */
 
-.mono {
-  font-family: Menlo;
-}
+.mono {font-family: Menlo;}
 
 /* [DOCUMENTATION] text */
 
@@ -119,7 +118,7 @@ h2 {
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: 4315px;
+  height: calc(4315px - 100vh);
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
@@ -130,7 +129,7 @@ h2 {
 
 #static {
   width: 5040px;
-  height: 6000px;
+  height: 4315px; /* 6000 px */
   position: absolute;
   z-index: 5;
   top:0px;
@@ -144,7 +143,7 @@ h2 {
 
 #moving {
   width: 5040px;
-  height: 6000px;
+  height: 4315px;
   position: absolute;
   z-index: 5;
   top: 0px;
@@ -154,7 +153,16 @@ h2 {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   overflow-x: hidden;
+  /* animation: loop 5s ease infinite; */
 }
+
+/* @keyframes loop {
+  0%   {transform: translateX(0px)}
+  25%  {transform: translateX(80px)}
+  50%  {transform: translateY(80px)}
+  75%  {transform: translateX(-80px)}
+  100% {transform: translateY(-80px)}
+} */
 
 /* Top Gradient Movement */
 

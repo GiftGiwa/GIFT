@@ -51,7 +51,7 @@ function StartPage() {
             <div id="bg_rect_2"></div>
 
             <Grid id = "static" />
-            {/* <Grid id = "moving" /> */}
+            <Grid id = "moving" />
     
         </div>   
     )
