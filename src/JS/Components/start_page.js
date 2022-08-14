@@ -35,23 +35,23 @@ function Page() {
                     {duration: 1500, value: '-=80px',},
                     {duration: 1500, value: '+=0px',
                     },
-                  ],
-                  translateY: [
+                ],
+                translateY: [
                     {duration: 1500, value: '+=0px',},
                     {duration: 1500, value: '+=80px',},
                     {duration: 1500, value: '+=0px',},
                     {duration: 1500, value: '-=80px',},
-                  ],
+                ],
                 duration: 3000
             });
 
             setTimeout(function () {
                 document.getElementById("bg_rect").style.top = "0px"
-                document.body.height = 4315
+                document.getElementById("bg_rect_2").style.top = "0px"
+                document.body.style.height = "4315px"
 
-                document.getElementById("html").height = 4315
+                document.getElementById("html").style.height = "4315px"
                 document.getElementById("html").style.overflowY = "scroll"
-                document.getElementById("html").style.overflowX = "hidden"
             }, 1500)
 
         }
@@ -59,7 +59,6 @@ function Page() {
         move_up()
         
     }
-
 
     return (
         <div id = "start">

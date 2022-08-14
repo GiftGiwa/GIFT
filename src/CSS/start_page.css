@@ -5,6 +5,11 @@ html, body {
   padding:0;
   overflow-x:hidden;
   overflow-y:hidden;
+
+}
+
+#html {
+  height: 100vh;
 }
 
 body {
@@ -12,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   top:0;
+  height: 100vh;
 }
 
 h2 {
@@ -48,7 +54,6 @@ h2 {
   right: 10px;
   z-index:2;
   margin:0;
-
   color:rgba(0, 0, 0, 0.5)
 }
 
@@ -113,7 +118,7 @@ h2 {
 #bg_rect {
   width: 100vw;
   margin:auto;
-  height: calc(4315px);
+  height: 110vh;
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
@@ -123,12 +128,12 @@ h2 {
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: 4315px;
+  height: calc(4315px + 100vh);
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
   top: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* static/moving grids */
