@@ -1,3 +1,5 @@
+/* Outer Container */
+
 #aboutMe {
     position: absolute;
     height: 2000px;
@@ -11,8 +13,22 @@
     transform: translateX(-50%);
 }
 
+/* Portrait (temporary substitute) */
+
 #portrait {
     width: 200px;
     height: 300px;
     background-color: black;
+    margin:40px;
+    margin-top:60px;
+    float:right;
+    
+}
+
+/* Text */
+
+#about-me-text {
+    width: calc(100% - 300px);
+    margin-left:15px;
+    
 }

@@ -8,10 +8,12 @@ function AboutMe () {
             <h3 className="headings">.about-me</h3>
             <div id="portrait"></div>
 
-            <p className="main-text body delay" id="_1">I’m currently a sophomore Computer Science student at Columbia University. I’ve worked with these technologies so far:</p>
-            <br></br>
-            <p className="main-text body delay" id="_2">I’m interested in app development (mainly front-end), and computer graphics. I also like playing video games (especially Mario Kart) and – though I’m new to them – music production and creating 3D designs.</p>
-
+            <div id = "about-me-text">
+                <p className="main-text body delay" id="_1">I’m currently a sophomore Computer Science student at Columbia University. I’ve worked with these technologies so far:</p>
+                <br></br>
+                <p className="main-text body delay" id="_2">I’m interested in app development (mainly front-end), and computer graphics. I also like playing video games (especially Mario Kart) and – though I’m new to them – music production and creating 3D designs.</p>
+            </div>
+            
         </div>
     )
 
