@@ -17,7 +17,7 @@
 
 .body {
     font-family: 'Inter', sans-serif;
-    display: block;
+    display: inline-block;
     color: #c0c0c0;
     
 }

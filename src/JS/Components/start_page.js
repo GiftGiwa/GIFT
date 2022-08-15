@@ -48,9 +48,9 @@ function Page() {
             setTimeout(function () {
                 document.getElementById("bg_rect").style.top = "0px"
                 document.getElementById("bg_rect_2").style.top = "0px"
-                document.body.style.height = "4315px"
+                document.body.style.height = "4015px"
 
-                document.getElementById("html").style.height = "4315px"
+                document.getElementById("html").style.height = "4015px"
                 document.getElementById("html").style.overflowY = "scroll"
             }, 1500)
 
