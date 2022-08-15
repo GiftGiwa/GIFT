@@ -6,11 +6,12 @@
     z-index:7;
     top:100px;
     left:200px;
-    width: calc(100vw - 350px);
+    width: calc(100vw - 300px);
     left: 50%;
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    vertical-align:baseline;
 }
 
 /* Portrait (temporary substitute) */
@@ -23,7 +24,8 @@
     position: absolute;
     right:40px;
     top:80px;
-
+    display: inline-block;
+    vertical-align:baseline;
 }
 
 /* Text */
@@ -32,6 +34,7 @@
     width: calc(100% - 350px);
     margin-left:15px;
     position:absolute;
+    display: inline-block;
 
 
 }

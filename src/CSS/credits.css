@@ -1,8 +1,8 @@
 #credits {
     position: absolute;
-    top: 4000px;
+    top: 3900px;
     z-index:7;
-    width: calc(100vw - 350px);
+    width: calc(100vw - 300px);
     left: 50%;
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -11,7 +11,11 @@
     height: auto;
 }
 
-creditText {
-    margin-top: 15px;
-    margin-bottom: 15px;
+#creditText {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+a {
+    color:#c0c0c0
 }

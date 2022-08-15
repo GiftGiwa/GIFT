@@ -5,7 +5,10 @@ function AboutMe () {
 
     return (
         <div id="aboutMe">
-            <h3 className="headings">.about-me</h3>
+            <div id="about-me-header">
+                <h3 className="headings">.about-me</h3>
+            </div>
+            
             <div id="portrait"></div>
 
             <div id = "about-me-text">
