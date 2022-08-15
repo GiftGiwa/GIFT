@@ -20,8 +20,8 @@
     height: 300px;
     background-color: black;
     margin:40px;
-    margin-top:60px;
-    float:right;
+    /* float:right; */
+    position: relative;
     
 }
 

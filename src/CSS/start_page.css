@@ -128,7 +128,7 @@ h2 {
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: calc(4315px + 100vh);
+  height: calc(4615px); /* + 100vh */
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
