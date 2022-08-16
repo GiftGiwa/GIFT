@@ -2,39 +2,54 @@
 
 #aboutMe {
     position: absolute;
-    height: 2000px;
+    height: 550px;
     z-index:7;
-    top:100px;
-    left:200px;
-    width: calc(100vw - 300px);
+    top:80px;
+    width: calc(100vw - 200px);
     left: 50%;
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    vertical-align:baseline;
+    display:block;
+    margin:auto;
 }
 
 /* Portrait (temporary substitute) */
 
 #portrait {
     width: 200px;
-    height: 300px;
+    height: 250px;
     background-color: black;
-    margin:10px;
+    margin:auto;
     position: absolute;
-    right:40px;
-    top:80px;
+    right:70px;
+    /* top:80px; */
     display: inline-block;
-    vertical-align:baseline;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
 }
 
 /* Text */
 
-#about-me-text {
-    width: calc(100% - 350px);
-    margin-left:15px;
+#about-me-body {
+    width: 100%;
+    padding:30px;
     position:absolute;
     display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
 
+#about-me-text {
+    width: calc(100% - 350px);
+    display:inline-block;
+    height:auto;
+}
 
+@media only screen and (max-width: 970px) {
+    #about-me-text, #portrait {
+        display:block;
+    }
 }
