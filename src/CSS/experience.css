@@ -1,7 +1,7 @@
 #experience {
     position:absolute;
     top: 700px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 600px);
     z-index:7;
     left: 50%;
     -moz-transform: translateX(-50%);
