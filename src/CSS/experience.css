@@ -1,12 +1,12 @@
 #experience {
     position:absolute;
-    top: 700px;
+    display:block;
     width: calc(100vw - 600px);
     z-index:7;
     left: 50%;
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    display:block;
     margin:auto;
+    top:720px;
 }
