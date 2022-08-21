@@ -1,5 +1,5 @@
 #experience {
-    position:absolute;
+    position: relative;
     display:block;
     width: calc(100vw - 600px);
     z-index:7;
