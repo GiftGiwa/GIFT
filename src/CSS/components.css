@@ -36,7 +36,8 @@
 
 @media only screen and (max-width: 1280px) {
     .headings {
-        position:absolute;
+        position:relative;
+
         left: 50%;
         -moz-transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
