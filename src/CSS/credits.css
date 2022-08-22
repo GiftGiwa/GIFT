@@ -9,6 +9,8 @@
     transform: translateX(-50%);
     text-align: center;
     height: auto;
+    padding: 20px;
+
 }
 
 #creditText {

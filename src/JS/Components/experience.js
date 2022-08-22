@@ -5,7 +5,7 @@ import "../../CSS/experience.css"
 function Experience() {
 
     return (
-        <div id = "experience">
+        <div className="horizontal-center" id = "experience">
             <div id="experience-header">
                 <h3 className="headings">.experience</h3>
             </div>

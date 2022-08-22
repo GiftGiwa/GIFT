@@ -5,11 +5,12 @@ import Credits from "./Components/credits"
 import Experience from "./Components/experience"
 
 function App() {
+  
   return (
     <>
       <Page />
       <AboutMe />
-      <Experience />
+      {/* <Experience /> */}
 
       <Credits />
     </>

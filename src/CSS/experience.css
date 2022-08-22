@@ -1,12 +1,9 @@
 #experience {
-    position: relative;
     display:block;
     width: calc(100vw - 600px);
     z-index:7;
-    left: 50%;
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin:auto;
-    top:720px;
+    margin:0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
 }

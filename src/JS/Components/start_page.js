@@ -25,6 +25,8 @@ function Page() {
                 duration: 1500
             })
 
+            //background grid animation loop
+
             anime({
                 targets: '#moving',
                 easing: 'easeOutSine',
@@ -46,11 +48,11 @@ function Page() {
             });
 
             setTimeout(function () {
-                document.getElementById("bg_rect").style.top = "0px"
-                document.getElementById("bg_rect_2").style.top = "0px"
-                document.body.style.height = "4015px"
+                // document.getElementById("bg_rect").style.top = "0px"
+                // document.getElementById("bg_rect_2").style.top = "0px"
+                // document.body.style.height = "4015px"
 
-                document.getElementById("html").style.height = "4015px"
+                // document.getElementById("html").style.height = "4015px"
                 document.getElementById("html").style.overflowY = "scroll"
             }, 1500)
 
@@ -63,23 +65,24 @@ function Page() {
     return (
         <div id = "start">
 
-            <div id="top-gradient"></div>
+
+            {/* <div id="top-gradient"></div>
         
             <p className="mono" id="doc">[DOCUMENTATION]</p>
             <h2>GiftGiwa</h2>
             <p className="mono" id="SWE">software engineer.</p>
             <p className="mono" id="label">[click anywhere to proceed]</p>
 
-            <div className="mono" id = "response" onClick = {slide}></div>
+            <div className="mono" id = "response" onClick = {slide}></div> */}
 
-            <div className="mono" id="circle_bound"></div>
+            
 
-            <div id="bg_rect"></div>
+            {/* <div id="bg_rect"></div> */}
 
-            <div id="bg_rect_2">
+            {/* <div id="bg_rect_2">
                 <Grid id = "static" />
                 <Grid id = "moving" />   
-            </div>
+            </div> */}
     
         </div>   
     )

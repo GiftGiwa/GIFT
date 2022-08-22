@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-html, body {
+/* html, body {
   margin:0;
   padding:0;
   overflow-x:hidden;
-  overflow-y:hidden;
-}
 
-#html {
-  height: 100vh;
-}
+  width: 100vw;
+} */
+
 
 body {
-  background-color: black;
+  background-color: #1c1c1c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   top:0;
-  height: 100vh;
 }
 
 h2 {
@@ -37,12 +34,6 @@ h2 {
 
 .mono {font-family: Menlo;}
 
-/* div for starting page + background for remainder of page */
-
-#start {
-  height: 4315px;
-  overflow:hidden;
-}
 
 /* [DOCUMENTATION] text */
 
@@ -127,7 +118,7 @@ h2 {
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: calc(4815px); /* + 100vh */
+  height: 5920px; /* + 100vh */
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
@@ -184,9 +175,5 @@ h2 {
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 15vw;
-  }
-
-  #bg_rect_2 {
-    height: 5015px;
-  }
+  } 
 }
