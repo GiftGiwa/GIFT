@@ -58,19 +58,18 @@
 }
 
 #columbia:hover {
-    /* color: #bde7ff; */
-    animation: lighten 1s;
+    color: #bde7ff;
 }
 
-@keyframes lighten {
+/* @keyframes lighten {
     to {color: #bde7ff;}
 }
 
 @keyframes normal {
     100% {color: #5cbcf2;}
-}
+} */
 
-/* Technologies/Programming Languages Icons? */
+/* Technologies/Programming Languages Icons */
 
 #technologies {
     position:relative;
