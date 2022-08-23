@@ -19,7 +19,7 @@ function AboutMe () {
                         <p className="main-text body">Hi, I'm Gift! I’m currently a sophomore Computer Science student at <a id="columbia" target="_blank" href="https://www.cs.columbia.edu/">Columbia University</a>. I’ve worked with these technologies so far:</p>
                         <br></br>
 
-                        <ProgrammingLanguages />
+                        <ProgrammingLanguages className="horizontal-center" id="technologies"/>
                         <br></br>
 
                         <p className="main-text body">I started programming in my senior year of high school with Java in AP Computer Science A. After practicing a bit, I've expanded into Python, JavaScript, HTML, and CSS through my college coursework and self-studying.</p>

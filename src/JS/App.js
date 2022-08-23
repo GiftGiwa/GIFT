@@ -10,9 +10,9 @@ function App() {
     <>
       <Page />
       <AboutMe />
-      {/* <Experience /> */}
+      <Experience />
 
-      <Credits />
+      {/* <Credits /> */}
     </>
   )
 }

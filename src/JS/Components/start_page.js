@@ -65,7 +65,6 @@ function Page() {
     return (
         <div id = "start">
 
-
             {/* <div id="top-gradient"></div>
         
             <p className="mono" id="doc">[DOCUMENTATION]</p>
