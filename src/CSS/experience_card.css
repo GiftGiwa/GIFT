@@ -1,18 +1,43 @@
 #experience-card {
+    position:relative;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     position: relative;
-    box-sizing:border-box;
-    width: 350px;
-    height: 350px;
+    /* box-sizing:border-box; */
+    width: 400px;
+    height: 400px;
     z-index:8;
     background-color:#171717;
     /* box-shadow: 0px 0px 54px -3px rgba(0, 0, 0, 0.8); */
     border: 1px solid;
+    font-family: Inter;
+    padding:10px;
+}
+
+#experience-card::selection {
+    background:#c0c0c0;
+    color: #1c1c1c;
+}
+
+.positions {
+    position:absolute;
+    margin-top:16px;
+    margin-bottom:20px;
+    padding-left:70px;
+    font-size:22px;
+    color:#fff;
+}
+
+#CU {
+    color: #5cbcf2;
+    font-weight:600;
 }
 
 @media only screen and (max-width: 820px) {
    #experience-card {
-    flex-direction:column;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
    }
 }

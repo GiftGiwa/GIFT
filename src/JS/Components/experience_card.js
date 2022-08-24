@@ -6,12 +6,12 @@ import "../../CSS/experience_card.css"
 function ExperienceCard(props) {
 
     return (
-        <div style={{borderColor: props.color}} className="body" id="experience-card">
+        <div style={{borderColor: props.color}} id="experience-card">
             <h4 style={{color: props.color}}>{props.count}</h4>
-            <p style={{color:props.companyColor}}>{props.company}, {props.position}</p>
-            <li>{props.firstBullet}</li>
-            <li>{props.secondBullet}</li>
-            <li>{props.thirdBullet}</li>
+            <p className = "positions" style={{color:props.companyColor}}><span id="CU">{props.company},</span> <br></br>{props.position}</p>
+            <li>{props.bullets[0]}</li>
+            <li>{props.bullets[1]}</li>
+            <li>{props.bullets[2]}</li>
         </div>
     )
 }

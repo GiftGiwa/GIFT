@@ -79,8 +79,8 @@ function Page() {
             {/* <div id="bg_rect"></div> */}
 
             {/* <div id="bg_rect_2">
-                <Grid id = "static" />
-                <Grid id = "moving" />   
+                <Grid className="grid" id = "static" />
+                <Grid className="grid" id = "moving" />   
             </div> */}
     
         </div>   

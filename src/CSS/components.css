@@ -17,13 +17,13 @@
 
 .body {
     font-family: 'Inter', sans-serif;
-    color: #c0c0c0;
+    color: #ededed;
     display:block;
     
 }
 
 .body::selection {
-    background:#c0c0c0;
+    background:#fff;
     color: #1c1c1c;
 }
 
@@ -38,7 +38,14 @@ h4 {
     font-family: Menlo;
     font-size:24px;
     padding-left:20px;
-
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+li {
+    margin-left:20px;
+    padding:10px;
+    color:#c0c0c0
 }
 
 /* Responsive Design Rules */
