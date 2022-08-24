@@ -3,31 +3,29 @@ import "../../CSS/start_page.css"
 import anime from "../../../node_modules/animejs/lib/anime.es.js"
 import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 
-
 function Page() {
 
     function slide() {
 
-        anime({
+        /* anime({
             targets: '#moving',
             easing: "linear",
             translateX: -2520,
             translateY: -80,
             duration: 0,
-        });
+        }); */
 
         function move_up() {
 
             anime({
-                targets: '#bg_rect_2',
+                targets: '.intro',
                 translateY: -1 * window.innerHeight,
                 easing: "easeOutExpo",
                 duration: 1500
             })
 
             //background grid animation loop
-
-            anime({
+            /* anime({
                 targets: '#moving',
                 easing: 'easeOutSine',
                 loop: true,
@@ -45,15 +43,10 @@ function Page() {
                     {duration: 1500, value: '-=80px',},
                 ],
                 duration: 3000
-            });
+            }); */
 
             setTimeout(function () {
-                // document.getElementById("bg_rect").style.top = "0px"
-                // document.getElementById("bg_rect_2").style.top = "0px"
-                // document.body.style.height = "4015px"
-
-                // document.getElementById("html").style.height = "4015px"
-                document.getElementById("html").style.overflowY = "scroll"
+                document.querySelectorAll(".intro").forEach(el => el.remove()); //remove the start screen after click
             }, 1500)
 
         }
@@ -65,24 +58,15 @@ function Page() {
     return (
         <div id = "start">
 
-            {/* <div id="top-gradient"></div>
+            <div className="intro" id="top-gradient"></div>
         
-            <p className="mono" id="doc">[DOCUMENTATION]</p>
-            <h2>GiftGiwa</h2>
-            <p className="mono" id="SWE">software engineer.</p>
-            <p className="mono" id="label">[click anywhere to proceed]</p>
+            <p className="mono intro" id="doc">[DOCUMENTATION]</p>
+            <h2 className="intro">GiftGiwa</h2>
+            <p className="mono intro" id="SWE">software engineer.</p>
+            <p className="mono intro" id="label">[click anywhere to proceed]</p>
 
-            <div className="mono" id = "response" onClick = {slide}></div> */}
+            <div className="mono" id = "response" onClick = {slide}></div>
 
-            
-
-            {/* <div id="bg_rect"></div> */}
-
-            {/* <div id="bg_rect_2">
-                <Grid className="grid" id = "static" />
-                <Grid className="grid" id = "moving" />   
-            </div> */}
-    
         </div>   
     )
 }

@@ -17,7 +17,7 @@
 
 .body {
     font-family: 'Inter', sans-serif;
-    color: #ededed;
+    color: #fff;
     display:block;
     
 }
@@ -43,7 +43,7 @@ h4 {
     margin-bottom:20px;
 }
 li {
-    margin-left:20px;
+    margin-left:15px;
     padding:10px;
     color:#c0c0c0
 }

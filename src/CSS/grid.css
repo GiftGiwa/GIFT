@@ -1,0 +1,28 @@
+/* static/moving grids */
+#grids {
+    height: 100px;
+    overflow-y: hidden;
+}
+
+#static {
+    position: absolute;
+    z-index: 5;
+    top:0px;
+    margin:0;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  #moving {
+    position: absolute;
+    z-index: 5;
+    top:0px;
+    margin:0;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
