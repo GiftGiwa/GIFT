@@ -3,7 +3,6 @@
     display:flex;
     flex-direction:column;
     position: relative;
-    /* box-sizing:border-box; */
     width: 400px;
     height: 400px;
     z-index:8;
@@ -11,6 +10,11 @@
     /* box-shadow: 0px 0px 54px -3px rgba(0, 0, 0, 0.8); */
     border: 1px solid;
     font-family: Inter;
+    margin:10px;
+}
+
+#cards {
+    display:flex;
 }
 
 #experience-card::selection {

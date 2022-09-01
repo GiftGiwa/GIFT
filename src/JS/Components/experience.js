@@ -17,6 +17,12 @@ function Experience() {
         },
         {
             count:"02",
+            company: "Creative Machines Lab",
+            position: "SWE",
+            bullets: ["???", "???", "???"]
+        },
+        {
+            count:"03",
             company: "???",
             position: "???",
             bullets: ["???", "???", "???"]
@@ -32,7 +38,8 @@ function Experience() {
 
             <div id="cards">
                 <ExperienceCard color="#45D4B2" id="build-lab" count={experience[0].count} companyColor={experience[0].companyColor} company={experience[0].company} position={experience[0].position} bullets={experience[0].bullets}></ExperienceCard>
-                <ExperienceCard color="#4553D4" id="creative-mechanics" count={experience[1].count} company={experience[1].company} position={experience[1].position} bullets={experience[1].bullets}></ExperienceCard>
+                <ExperienceCard color="#4553D4" id="creative-machines" count={experience[1].count} company={experience[1].company} position={experience[1].position} bullets={experience[1].bullets}></ExperienceCard>
+                <ExperienceCard color="#ffffff" id="third-experience" count={experience[2].count} company={experience[2].company} position={experience[2].position} bullets={experience[2].bullets}></ExperienceCard>
             </div>
         
         </div>

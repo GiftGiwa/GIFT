@@ -1,6 +1,6 @@
 #experience {
     display:block;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 100px);
     z-index:7;
     margin:0;
     padding-top: 50px;
