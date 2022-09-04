@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 #my-creations {
     display:block;
     width: calc(100vw - 600px);
@@ -13,15 +15,37 @@
     position: relative;
     padding-bottom: 20px;
 }
-
-#sudoku {
-    width: 250px;
+.project {
+    width: calc(100% / 3);
     height: auto;
     position: relative;
+    margin:0;
+    display:inline-block;
 }
 
-#personal_site {
-    width: 250px;
-    height: auto;
+.filler {
+    background-color: rgb(20, 20, 20);
+    width: calc(100% / 3);
+    height: calc((100vw - 600px)/3);
     position: relative;
+    margin:0;
+    display:inline-block;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+    #my-creations {
+        width: calc(100vw - 400px);
+    }
+
+    .project {
+        width: calc((100vw - 400px) / 3);
+    }
+
 }

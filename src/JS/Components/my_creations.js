@@ -11,8 +11,10 @@ function MyCreations() {
             </div>
 
             <div id = "projects">
-                <img id = "sudoku" src={sudoku}></img>
-                <img id = "personal_site" src={personal_site}></img>
+
+                <div className = "project"><img className = "images" id = "sudoku" src={sudoku}></img></div>
+                <div className = "project"><img className = "images" id = "personal_site" src={personal_site}></img></div>
+                <div className = "filler"></div>
             </div>
         </div>
     )

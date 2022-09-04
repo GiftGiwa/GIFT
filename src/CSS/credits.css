@@ -1,6 +1,5 @@
 #credits {
-    position: absolute;
-    top: 3900px;
+    position: relative;
     z-index:7;
     width: calc(100vw - 300px);
     left: 50%;
