@@ -6,8 +6,8 @@ import "../../CSS/experience_card.css"
 function ExperienceCard(props) {
 
     return (
-        <div style={{borderColor: props.color}} id="experience-card">
-            <h4 style={{color: props.color}}>{props.count}</h4>
+        <div style={{backgroundColor: props.color}} id="experience-card">
+            <h4 style={{color: props.bgcolor}}>{props.count}</h4>
             <p className = "positions" ><span style={{color:props.companyColor}}>{props.company},</span> <br></br>{props.position}</p>
             <li>{props.bullets[0]}</li>
             <li>{props.bullets[1]}</li>

@@ -1,16 +1,17 @@
 #experience-card {
     position:relative;
     display:flex;
+    /* display:block; */
     flex-direction:column;
     position: relative;
-    width: 400px;
-    height: 400px;
+    padding:25px;
+    /* width:400px; */
+    width: 100%;
     z-index:8;
     background-color:#171717;
-    /* box-shadow: 0px 0px 54px -3px rgba(0, 0, 0, 0.8); */
-    border: 1px solid;
+    border: 0px solid;
     font-family: Inter;
-    margin:10px;
+    margin:0;
 }
 
 #cards {
@@ -24,7 +25,7 @@
 
 .positions {
     position:absolute;
-    margin-top:16px;
+    margin-top:8px;
     margin-bottom:20px;
     padding-left:70px;
     font-size:22px;
