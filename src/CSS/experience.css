@@ -19,11 +19,23 @@
 }
 
 @media only screen and (max-width: 1350px) {
-    
+    #experience {
+        width: calc(100vw - 400px);
+    }
+
+    #cards {
+        width: calc(100vw - 400px);
+        display:block;
+        position:relative;
+    }
 }
 
 @media only screen and (max-width: 820px) {
     #experience {
         width: calc(100vw - 50px);
+    }
+    #cards {
+        width: calc(100vw - 50px);
+        
     }
 }
