@@ -39,6 +39,7 @@ function Experience() {
 
             <div id="cards">
                 <ExperienceCard color="rgba(69, 212, 179, 0.15)" bgcolor="rgb(69, 212, 179)" id="build-lab" date = {experience[0].date} count={experience[0].count} companyColor={experience[0].companyColor} company={experience[0].company} position={experience[0].position} bullets={experience[0].bullets}></ExperienceCard>
+                <div id = "xp-filler"></div>
                 {/* <ExperienceCard color="#4553D4" id="creative-machines" count={experience[1].count} company={experience[1].company} position={experience[1].position} bullets={experience[1].bullets}></ExperienceCard>
                 <ExperienceCard color="#ffffff" id="third-experience" count={experience[2].count} company={experience[2].company} position={experience[2].position} bullets={experience[2].bullets}></ExperienceCard> */}
             </div>

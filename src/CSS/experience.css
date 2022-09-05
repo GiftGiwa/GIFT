@@ -18,6 +18,17 @@
     display:grid;
 }
 
+/* Experience Filler Div */
+
+#xp-filler {
+    display:block;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 1350px) {
     #experience {
         width: calc(100vw - 400px);

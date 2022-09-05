@@ -16,9 +16,7 @@ function MyCreations() {
                 <div id = "projects">
                     <div className = "project"><img className = "images" id = "sudoku" src={sudoku}></img></div>
                     <div className = "project"><img className = "images" id = "personal_site" src={personal_site}></img></div>
-                    <Filler />
-                    <Filler />
-                    <Filler />
+                    <Filler /><Filler /><Filler />
                 </div>
 
                 {/* <div className = "project"><img className = "images" id = "sudoku" src={sudoku}></img></div>

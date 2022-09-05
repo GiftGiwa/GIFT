@@ -1,12 +1,11 @@
 #experience-card {
     position:relative;
     display:flex;
-    /* display:block; */
     flex-direction:column;
     position: relative;
     padding:25px;
-    /* width:400px; */
-    width: 100%;
+ 
+    /* width: 100%; */
     z-index:8;
     background-color:#171717;
     border: 0px solid;
@@ -15,7 +14,7 @@
 }
 
 #cards {
-    display:flex;
+    display:block;
 }
 
 #experience-card::selection {

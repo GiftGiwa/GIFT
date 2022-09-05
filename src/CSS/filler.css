@@ -15,7 +15,6 @@
     font-family: Inter;
     font-size:72px;
     text-align: center;
-    position: relative;
     display:inline-block;
     top: calc(50% - 10px);
     -moz-transform: translateY(-50%);
@@ -29,6 +28,7 @@
     .filler {
         width: calc((100vw - 400px - 60px) / 2);
         height: calc((100vw - 400px - 60px) / 2);
+        display:inline-block;
     }
 
 }
