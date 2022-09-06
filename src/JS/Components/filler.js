@@ -1,8 +1,8 @@
 import "../../CSS/filler.css"
 
-function Filler() {
+function Filler(props) {
     return (
-        <div className = "filler">
+        <div style={{backgroundColor: props.bgcolor}} className = "filler">
             <p className = "horizontal-center" id="ellipsis">•••</p>
         </div>
     )
