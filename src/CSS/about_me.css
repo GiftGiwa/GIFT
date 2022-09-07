@@ -25,10 +25,11 @@
     padding-left:60px;
     padding-right:60px;
     padding-top: 20px;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-size: 16px;  
 }
 
-/* Portrait (temporary substitute) */
+/* Portrait (temporary substitute, I'll replace with a picture when I can get a rood one.) */
 
 #portrait {
     width: 200px;
@@ -50,7 +51,6 @@
 #columbia {
     color: #5cbcf2;
     text-decoration: none;
-    /* animation: normal 1s; */
 }
 
 #columbia::selection {
@@ -61,14 +61,6 @@
 #columbia:hover {
     color: #bde7ff;
 }
-
-/* @keyframes lighten {
-    to {color: #bde7ff;}
-}
-
-@keyframes normal {
-    100% {color: #5cbcf2;}
-} */
 
 /* Technologies/Programming Languages Icons */
 
@@ -93,12 +85,12 @@
         min-width: 260px;
     }    
     #portrait {
+        position: relative;
         top: 30px;
         left: 50%;
         -moz-transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        position: relative;
     } 
     #about-me-text {
         width: auto;
