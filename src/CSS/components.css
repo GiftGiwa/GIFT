@@ -53,6 +53,10 @@ li {
     font-family: Menlo;
 }
 
+ul > li {
+    display: inline-block;
+}
+
 /* Responsive Design Rules */
 
 @media only screen and (max-width: 1350px) {
