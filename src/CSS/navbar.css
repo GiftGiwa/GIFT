@@ -2,7 +2,7 @@
     position: fixed;
     top: 0px;
     background: rgba(28, 28, 28, 0.3);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     width: 100vw;
     margin: auto;
     z-index:8;

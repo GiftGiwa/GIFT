@@ -6,7 +6,7 @@ import ProgrammingLanguages from "./programming_languages"
 function AboutMe () {
 
     return (
-        <>
+      
             <div className="horizontal-center" id = "about-me">
 
                 <h3 className="headings">.about-me</h3>
@@ -31,7 +31,7 @@ function AboutMe () {
                 </div>
 
             </div>            
-        </>
+      
     )
 
 }
