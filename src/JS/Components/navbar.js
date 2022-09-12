@@ -5,10 +5,11 @@ function Navbar() {
     return (
         <div id = "navbar">
             <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="news.asp">.about-me</a></li>
-                <li><a href="contact.asp">.experience</a></li>
-                <li><a href="about.asp">.my-creations</a></li>
+                {/* <li><a href="default.asp">Home</a></li> */}
+                <li><a href="news.asp">01  .about-me</a></li>
+                <li><a href="contact.asp">02  .experience</a></li>
+                <li><a href="about.asp">03  .my-creations</a></li>
+                <li><a href="about.asp">04  .contact-me</a></li>
             </ul>
         </div>
     )

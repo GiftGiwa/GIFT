@@ -51,6 +51,7 @@ li {
     padding:10px;
     color:#c0c0c0;
     font-family: Menlo;
+    text-decoration:none;
 }
 
 ul > li {

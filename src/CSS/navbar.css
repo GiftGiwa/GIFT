@@ -1,7 +1,9 @@
 #navbar {
     position: fixed;
     top: 0px;
-    background-color: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: rgba(28, 28, 28, 0.3);
+    backdrop-filter: blur(4px);
     width: 100vw;
+    margin: auto;
     z-index:8;
 }
