@@ -36,6 +36,7 @@
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    pointer-events: auto; 
 }
 
 h4 {

@@ -9,7 +9,7 @@ function Navbar() {
                 <li><a href="#about-me">01  .about-me</a></li>
                 <li><a href="#experience">02  .experience</a></li>
                 <li><a href="#my-creations">03  .my-creations</a></li>
-                <li><a href="about.asp">04  .contact-me</a></li>
+                {/* <li><a href="#contact-me">04  .contact-me</a></li> */}
             </ul>
         </div>
     )

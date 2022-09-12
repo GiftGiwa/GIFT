@@ -69,6 +69,17 @@
     transform: translateY(-50%);
 }
 
+/* On-Hover Rules For Projects*/
+.images {
+    transition: 0.3s;
+}
+
+.images:hover {
+    filter:brightness(70%);
+    
+}
+
+
 @media only screen and (max-width: 1350px) {
     #my-creations {
         width: calc(100vw - 400px);
@@ -90,7 +101,6 @@
         width: calc((100vw - 50px - 60px) / 2);
         height: calc((100vw - 50px - 60px) / 2);
     }
-    
     #projects {
         width: calc(100vw - 50px - 60px);
     }

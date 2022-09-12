@@ -6,6 +6,7 @@ import Experience from "./Components/experience"
 import MyCreations from "./Components/my_creations"
 import Navbar from "./Components/navbar"
 import DecoGrid from "./Components/grid"
+import Descriptions from "./Components/descriptions"
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Experience />
       {/* <DecoGrid /> */}
 
+      {/* <Descriptions /> */}
       <MyCreations />
       <Credits />
     </>

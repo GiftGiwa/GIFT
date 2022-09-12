@@ -6,7 +6,7 @@ import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 function Page() {
 
     function slide() {
-
+        // document.getElementById("label").style.color = "rgba(0, 0, 0, 0)"
         /* anime({
             targets: '#moving',
             easing: "linear",
@@ -46,13 +46,13 @@ function Page() {
             }); */
 
             setTimeout(function () {
-                document.querySelectorAll(".intro").forEach(el => el.remove()); //remove the start screen after click
+                document.querySelectorAll(".intro").forEach(el => el.remove()) //remove the start screen after click
+                
             }, 1500)
 
         }
 
-        move_up()
-        
+        move_up()       
     }
 
     return (

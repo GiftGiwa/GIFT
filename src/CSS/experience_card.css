@@ -4,8 +4,6 @@
     flex-direction:column;
     position: relative;
     padding:25px;
- 
-    /* width: 100%; */
     z-index:8;
     background-color:#171717;
     border: 0px solid;
