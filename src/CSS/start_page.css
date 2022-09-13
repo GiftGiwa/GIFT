@@ -23,7 +23,7 @@ body {
 }
 
 h2 {
-  z-index:12;
+  z-index:13;
   font-family:'Poppins';
   font-size:92px;
   color:black;
@@ -48,7 +48,7 @@ h2 {
   position: absolute;
   top:10px;
   right: 10px;
-  z-index:9;
+  z-index:13;
   margin:0;
   color:rgba(0, 0, 0, 0.5)
 }
@@ -59,7 +59,7 @@ h2 {
   font-size:20px;
   color:rgba(0, 0, 0, 1);
   position:absolute;
-  z-index: 9;
+  z-index: 13;
   top: 150px;
   left: 40px;
   margin:0;
@@ -70,7 +70,7 @@ h2 {
 #label {
   position: absolute;
   color: rgba(0, 0, 0, 0.5);
-  z-index:9;
+  z-index:13;
   font-size: 12px;
   margin: 0;
   top: 50%;
@@ -90,7 +90,7 @@ h2 {
   margin:0;
   background: linear-gradient(155deg, #FFE600 1.26%, #00FBFF 97.48%);
   background-size: 200% 100%;
-  z-index:8;
+  z-index:12;
   animation: move 5s ease infinite;
 }
 
@@ -101,7 +101,7 @@ h2 {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.0);
   position: absolute;
-  z-index: 10;
+  z-index: 14;
   top: 0px;
   border: 0px;
   margin:auto;

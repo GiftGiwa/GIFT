@@ -76,9 +76,23 @@
 
 .images:hover {
     filter:brightness(70%);
-    
 }
 
+/* Sudoku Description Test */
+
+#sudoku_desc {
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index:11;
+    display:none;
+    color: white;
+}
+
+#sudoku:hover + .desc {
+    display:block;
+}
 
 @media only screen and (max-width: 1350px) {
     #my-creations {

@@ -1,18 +1,14 @@
-.desc {
+/* #sudoku_desc {
+    background: rgba(0, 0, 0, 1);
     position: absolute;
-    /* width: 100px;
-    height: 100px; */
-    z-index:9;
-    background: black;
-    /* display:none; */
-    
+    display:block;
+    width: 100px;
+    height: 100px;
+    z-index:11;
+    display:none;
+
 }
 
-#sudoku_desc {
-    /* display: none; */
-}
-
-/* .images:hover + #sudoku_desc {
-    display: block;
+.images:hover + #sudoku_desc {
+    display:block;
 } */
-

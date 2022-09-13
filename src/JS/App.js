@@ -17,8 +17,6 @@ function App() {
       <AboutMe />
       <Experience />
       {/* <DecoGrid /> */}
-
-      <Descriptions />
       <MyCreations />
       <Credits />
     </>
