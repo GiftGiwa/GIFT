@@ -7,20 +7,16 @@ import Filler from "./filler"
 
 function MyCreations() {
     
-
     setTimeout(function () {
         let sudoku = document.getElementById('sudoku_desc')
         const onMouseMove = (e) => {
             let bounds = e.target.getBoundingClientRect();
-            console.log(bounds.left, bounds.top)
+            //console.log(bounds.left, bounds.top)
 
             if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
                 sudoku.style.left = (e.clientX - bounds.left + 30) + "px";
                 sudoku.style.top = (e.clientY - bounds.top + 30) + "px";
             }
-
-            // sudoku.style.left = (e.clientX) + "px";
-            // sudoku.style.top = (e.clientY) + "px";
 
         }
         document.addEventListener('mousemove', onMouseMove)
