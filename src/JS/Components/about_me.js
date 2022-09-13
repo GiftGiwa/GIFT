@@ -9,7 +9,7 @@ function AboutMe () {
       
             <div className="horizontal-center" id = "about-me">
 
-                <h3 className="headings">.about-me</h3>
+                <h3 className="headings" id = "top-header">.about-me</h3>
                 
                 <div id="about-me-body">
 

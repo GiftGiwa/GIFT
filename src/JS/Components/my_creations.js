@@ -1,5 +1,6 @@
 import "../../CSS/my_creations.css"
 import "../../CSS/components.css"
+import "../../CSS/descriptions.css"
 import sudoku from "../../Images/sudoku.png"
 import personal_site from "../../Images/personal_site.png"
 import Filler from "./filler"

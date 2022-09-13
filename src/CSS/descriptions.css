@@ -4,5 +4,15 @@
     height: 100px; */
     z-index:9;
     background: black;
+    /* display:none; */
     
 }
+
+#sudoku_desc {
+    /* display: none; */
+}
+
+/* .images:hover + #sudoku_desc {
+    display: block;
+} */
+
