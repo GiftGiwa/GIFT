@@ -36,8 +36,13 @@ function MyCreations() {
 
                 <div id = "projects">
                     <div className = "project" id = "sudoku"><img className = "images" src={sudoku}></img></div>
-                    <div className = "desc body" id = "sudoku_desc">Sudoku<br></br>
-                    Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.</div>
+                    <div className = "desc body" id = "sudoku_desc">
+                        <p className = "body">Sudoku
+                        <br></br> 
+                        
+                        Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.
+                        </p>
+                    </div>
 
                     <div className = "project" id = "personal_site"><img className = "images" src={personal_site}></img></div>
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>

@@ -37,7 +37,7 @@
     width: calc(100vw - 600px - 60px);
 }
 
-/* Inner Project Divs */
+/* Inner Project Divs (grid) */
 
 .project {
     width: calc((100vw - 600px - 60px) / 3);
@@ -78,13 +78,14 @@
     filter:brightness(70%);
 }
 
-/* Sudoku Description Test */
+/* Sudoku Description */
 
 #sudoku_desc {
-    background: rgba(0, 0, 0, 1);
+    background: rgb(26, 26, 26);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    padding:15px;
     z-index:11;
     display:none;
     color: white;
