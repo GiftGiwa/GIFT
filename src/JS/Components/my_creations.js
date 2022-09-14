@@ -8,6 +8,8 @@ import Filler from "./filler"
 function MyCreations() {
     
     setTimeout(function () {
+
+        //apply query selector for multiple divs instead of getElementById !
         let sudoku = document.getElementById('sudoku_desc')
         const onMouseMove = (e) => {
             let bounds = e.target.getBoundingClientRect();
@@ -34,7 +36,8 @@ function MyCreations() {
 
                 <div id = "projects">
                     <div className = "project" id = "sudoku"><img className = "images" src={sudoku}></img></div>
-                    <div className = "desc" id = "sudoku_desc">test</div>
+                    <div className = "desc body" id = "sudoku_desc">Sudoku<br></br>
+                    Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.</div>
 
                     <div className = "project" id = "personal_site"><img className = "images" src={personal_site}></img></div>
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
