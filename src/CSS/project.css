@@ -8,13 +8,10 @@
 .images {
     width: 100%;
     height: 100%;
-}
-
-/* On Hover Rules for Individual Projects */
-
-.images {
     transition: 0.3s;
 }
+
+/* On Hover Rule for Individual Projects */
 
 .images:hover {
     filter:brightness(70%);
@@ -33,7 +30,14 @@
     color: white;
 }
 
-
 #sudoku:hover + #sudoku_desc {
+    display:block;
+}
+
+#personalSite:hover + #personal_desc {
+    display:block;
+}
+
+#test:hover + #test_desc {
     display:block;
 }

@@ -8,8 +8,8 @@ function Project(props) {
     return (
         <>
             <div className = "project" id = {props.project} ><img className = "images" src={props.imageSource}></img></div>
-            <div className = "desc" id = "sudoku_desc">
-                <p className = "body">Test</p>
+            <div className = "desc" id = {props.projectDesc}>
+                <p className = "body">{props.info}</p>
             </div>
         </>       
     )

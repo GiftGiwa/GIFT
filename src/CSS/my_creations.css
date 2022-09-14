@@ -37,7 +37,6 @@
     width: calc(100vw - 600px - 60px);
 }
 
-
 /* Ellipsis (for filler) */
 
 #ellipsis {
@@ -55,16 +54,6 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-
-/* Sudoku Description */
-
-
-/* #sudoku:hover + #sudoku_desc {
-    display:block;
-} */
-
-
 
 /* Responsive Design Rules */
 

@@ -9,20 +9,25 @@ function MyCreations() {
     
     setTimeout(function () {
         //apply query selector for multiple divs instead of getElementById !
-        let sudoku = document.getElementById('sudoku_desc')
+
+        let descriptions = document.querySelectorAll(".desc")
+        console.log(descriptions)
         const onMouseMove = (e) => {
 
-            let bounds = e.target.getBoundingClientRect();
-            //console.log(bounds.left, bounds.top)
-            if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
-                sudoku.style.left = (e.clientX - bounds.left + 30) + "px";
-                sudoku.style.top = (e.clientY - bounds.top + 30) + "px";
-            }
-
+            descriptions.forEach((element) => {
+                let bounds = e.target.getBoundingClientRect();
+                
+                if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
+                    element.style.left = (e.clientX - bounds.left + 30) + "px";
+                    element.style.top = (e.clientY - bounds.top + 30) + "px";
+                }
+            })
         }
+
         document.addEventListener('mousemove', onMouseMove)
     }, 50)
 
+    let info = ["test", "also test", "also also test"]
 
     return (
         <div className = "horizontal-center" id="my-creations">
@@ -39,11 +44,12 @@ function MyCreations() {
                         <p className = "body">Sudoku
                         <br></br> 
                         
-                        Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.
+                        Sudoku puzzle generator/checker, built in vanilla HTML/CSS/JavaScript.
                         </p>
                     </div> */}
-                    <Project project = "sudoku" imageSource={sudoku}></Project>
-                    <Project project = "personalSite" imageSource={personal_site}></Project>
+                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} info = {info[0]}></Project>
+                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} info = {info[1]}></Project>
+                    <Project project = "test" projectDesc = "test_desc" imageSource={personal_site} info = {info[2]}></Project>
 
                     {/* <div className = "project" id = "personal_site"><img className = "images" src={personal_site}></img></div> */}
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
