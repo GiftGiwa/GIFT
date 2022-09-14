@@ -7,21 +7,6 @@
     display:inline-block;
 }
 
-#ellipsis {
-    width: 100%;
-    left:0px;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.15);
-    font-family: Inter;
-    font-size:72px;
-    text-align: center;
-    display:inline-block;
-    top: calc(50% - 10px);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 
 @media only screen and (max-width: 1350px) {
     
