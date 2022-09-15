@@ -1,7 +1,5 @@
 import "../../CSS/project.css"
 import "../../CSS/components.css"
-import sudoku from "../../Images/sudoku.png"
-import personal_site from "../../Images/personal_site.png"
 
 function Project(props) {
 

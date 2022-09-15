@@ -32,7 +32,8 @@ function MyCreations() {
         document.addEventListener('mousemove', onMouseMove)
     }, 50)
 
-    let info = ["test", "also test", "also also test"]
+    let info = ["A sudoku puzzle generator/checker webpage, made in vanilla HTML, CSS, and JavaScript.",
+                "also test", "also also test"]
 
     return (
         <div className = "horizontal-center" id="my-creations">
@@ -44,20 +45,12 @@ function MyCreations() {
             <div id = "projects-body">
 
                 <div id = "projects">
-                    {/* <div className = "project" id = "sudoku"><img className = "images" src={sudoku}></img></div>
-                    <div className = "desc body" id = "sudoku_desc">
-                        <p className = "body">Sudoku
-                        <br></br> 
-                        
-                        Sudoku puzzle generator/checker, built in vanilla HTML/CSS/JavaScript.
-                        </p>
-                    </div> */}
+
                     <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} info = {info[0]}></Project>
                     <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} info = {info[1]}></Project>
-                    <Project project = "test" projectDesc = "test_desc" imageSource={personal_site} info = {info[2]}></Project>
-
-                    {/* <div className = "project" id = "personal_site"><img className = "images" src={personal_site}></img></div> */}
+                    {/* <Project project = "test" projectDesc = "test_desc" imageSource={personal_site} info = {info[2]}></Project> */}
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
+
                 </div>
 
                 
