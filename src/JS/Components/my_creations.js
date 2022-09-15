@@ -12,11 +12,15 @@ function MyCreations() {
 
         let descriptions = document.querySelectorAll(".desc")
         console.log(descriptions)
-        let bounds = e.target.getBoundingClientRect();
+
+        //let bounds = document.getElementById("projects").getBoundingClientRect()
+
         const onMouseMove = (e) => {
+            let bounds = document.getElementById("projects").getBoundingClientRect()
+            //let bounds = e.target.getBoundingClientRect();
 
             descriptions.forEach((element) => {
-                //let bounds = e.target.getBoundingClientRect();
+            
                 
                 if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
                     element.style.left = (e.clientX - bounds.left + 30) + "px";
