@@ -19,24 +19,30 @@
 
 /* Project Descriptions Style */
 
+/* Heading (for descriptions) */
+
+/* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF) */
+
+
 .desc {
     background: rgb(26, 26, 26);
     border: 1.5px solid rgba(255, 255, 255, 0.3);
     position: absolute;
-    width: 225px;
+    width: 250px;
     padding:20px;
     z-index:11;
     display:none;
     color: white;
     margin-top:0px;
-    padding-top:0px;
-
+    padding-top:5px;
+    padding-bottom: 25px;
 }
 
 .project_body {
     position: relative;
     top: 10px;
-    
+    padding:0px;
+    margin:5px;
 }
 
 #sudoku:hover + #sudoku_desc {

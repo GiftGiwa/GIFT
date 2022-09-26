@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component }  from 'react';
 import "../../CSS/components.css"
 import "../../CSS/experience_card.css"
 

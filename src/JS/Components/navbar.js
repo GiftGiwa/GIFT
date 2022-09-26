@@ -1,5 +1,7 @@
+import React, { Component }  from 'react';
 import "../../CSS/navbar.css"
 import "../../CSS/components.css"
+
 
 function Navbar() {
     return (
@@ -10,6 +12,7 @@ function Navbar() {
                 <li><a href="#experience">02  .experience</a></li>
                 <li><a href="#my-creations">03  .my-creations</a></li>
                 {/* <li><a href="#contact-me">04  .contact-me</a></li> */}
+                {/* <GitHubIcon></GitHubIcon> */}
             </ul>
         </div>
     )
