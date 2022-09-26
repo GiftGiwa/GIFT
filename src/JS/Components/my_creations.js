@@ -43,8 +43,8 @@ function MyCreations() {
 
                 <div id = "projects">
 
-                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} name = {info[0][0]} info = {info[0][1]}></Project>
-                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} name = {info[1][0]} info = {info[1][1]}></Project>
+                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} headerColor = "#4FC1FF" name = {info[0][0]} info = {info[0][1]}></Project>
+                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} headerColor = "#FFFF00" name = {info[1][0]} info = {info[1][1]}></Project>
 
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
 

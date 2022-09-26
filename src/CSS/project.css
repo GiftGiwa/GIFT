@@ -23,11 +23,14 @@
     background: rgb(26, 26, 26);
     border: 1.5px solid rgba(255, 255, 255, 0.3);
     position: absolute;
-    width: 200px;
-    padding:15px;
+    width: 225px;
+    padding:20px;
     z-index:11;
     display:none;
     color: white;
+    margin-top:0px;
+    padding-top:0px;
+
 }
 
 .project_body {

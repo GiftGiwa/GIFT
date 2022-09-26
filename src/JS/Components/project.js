@@ -7,7 +7,7 @@ function Project(props) {
         <>
             <div className = "project" id = {props.project} ><img className = "images" src={props.imageSource}></img></div>
             <div className = "desc" id = {props.projectDesc}>
-                <p className = "body project_body">{props.name}; {props.info}</p>
+                <p className = "body project_body"><a className = "body project_body" style={{ color:props.headerColor }}>{props.name}</a>; {props.info}</p>
             </div>
         </>       
     )
