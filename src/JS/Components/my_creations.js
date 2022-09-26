@@ -1,29 +1,37 @@
+import React, { Component }  from 'react';
 import "../../CSS/my_creations.css"
 import "../../CSS/components.css"
-import "../../CSS/descriptions.css"
 import sudoku from "../../Images/sudoku.png"
 import personal_site from "../../Images/personal_site.png"
 import Filler from "./filler"
+import Project from "./project"
 
 function MyCreations() {
     
     setTimeout(function () {
 
-        //apply query selector for multiple divs instead of getElementById !
-        let sudoku = document.getElementById('sudoku_desc')
+        let descriptions = document.querySelectorAll(".desc")
+        //console.log(descriptions)
+
         const onMouseMove = (e) => {
-            let bounds = e.target.getBoundingClientRect();
-            //console.log(bounds.left, bounds.top)
+            let bounds = document.getElementById("projects").getBoundingClientRect()
 
-            if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
-                sudoku.style.left = (e.clientX - bounds.left + 30) + "px";
-                sudoku.style.top = (e.clientY - bounds.top + 30) + "px";
-            }
-
+            descriptions.forEach((element) => {   
+                if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
+                    element.style.left = (e.clientX - bounds.left + 30) + "px";
+                    element.style.top = (e.clientY - bounds.top + 30) + "px";
+                }
+            })
         }
+
         document.addEventListener('mousemove', onMouseMove)
     }, 50)
 
+
+    let info = [
+        ["Sudoku", "A sudoku puzzle generator/checker webpage. Made in HTML, CSS, and vanilla JavaScript."],
+        ["Personal Website", "A showcase of my experience, projects and current/future programming endeavors. Made in React.js."]
+    ]
 
     return (
         <div className = "horizontal-center" id="my-creations">
@@ -35,15 +43,13 @@ function MyCreations() {
             <div id = "projects-body">
 
                 <div id = "projects">
-                    <div className = "project" id = "sudoku"><img className = "images" src={sudoku}></img></div>
-                    <div className = "desc body" id = "sudoku_desc">Sudoku<br></br>
-                    Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.</div>
 
-                    <div className = "project" id = "personal_site"><img className = "images" src={personal_site}></img></div>
+                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} headerColor = "#4FC1FF" name = {info[0][0]} info = {info[0][1]}></Project>
+                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} headerColor = "#FFE600" name = {info[1][0]} info = {info[1][1]}></Project>
+
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
-                </div>
 
-                
+                </div>
 
             </div>
         </div>

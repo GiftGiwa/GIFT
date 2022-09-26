@@ -18,7 +18,7 @@
     padding-bottom: 20px;
 }
 
-/* Outer Projects Divs */
+/* Outer Projects Containers */
 
 #projects-body {
     box-sizing: border-box;
@@ -35,20 +35,6 @@
     position: relative;
     margin: 0;
     width: calc(100vw - 600px - 60px);
-}
-
-/* Inner Project Divs */
-
-.project {
-    width: calc((100vw - 600px - 60px) / 3);
-    height: calc((100vw - 600px - 60px) / 3);
-    position: relative;
-    display: inline-block;
-}
-
-.images {
-    width: 100%;
-    height: 100%;
 }
 
 /* Ellipsis (for filler) */
@@ -69,30 +55,7 @@
     transform: translateY(-50%);
 }
 
-/* On-Hover Rules For Projects*/
-.images {
-    transition: 0.3s;
-}
-
-.images:hover {
-    filter:brightness(70%);
-}
-
-/* Sudoku Description Test */
-
-#sudoku_desc {
-    background: rgba(0, 0, 0, 1);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index:11;
-    display:none;
-    color: white;
-}
-
-#sudoku:hover + .desc {
-    display:block;
-}
+/* Responsive Design Rules */
 
 @media only screen and (max-width: 1350px) {
     #my-creations {

@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import "../../CSS/about_me.css"
 import "../../CSS/components.css"
 import ProgrammingLanguages from "./programming_languages"
