@@ -8,20 +8,14 @@ import Project from "./project"
 function MyCreations() {
     
     setTimeout(function () {
-        //apply query selector for multiple divs instead of getElementById !
 
         let descriptions = document.querySelectorAll(".desc")
-        console.log(descriptions)
-
-        //let bounds = document.getElementById("projects").getBoundingClientRect()
+        //console.log(descriptions)
 
         const onMouseMove = (e) => {
             let bounds = document.getElementById("projects").getBoundingClientRect()
-            //let bounds = e.target.getBoundingClientRect();
 
-            descriptions.forEach((element) => {
-            
-                
+            descriptions.forEach((element) => {   
                 if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
                     element.style.left = (e.clientX - bounds.left + 30) + "px";
                     element.style.top = (e.clientY - bounds.top + 30) + "px";
@@ -32,8 +26,11 @@ function MyCreations() {
         document.addEventListener('mousemove', onMouseMove)
     }, 50)
 
-    let info = ["A sudoku puzzle generator/checker webpage, made in vanilla HTML, CSS, and JavaScript.",
-                "also test", "also also test"]
+
+    let info = [
+        ["Sudoku", "A sudoku puzzle generator/checker webpage. Made in vanilla HTML, CSS, and JavaScript."],
+        ["Personal Website", "A showcase of my experience, projects and current/future programming endeavors. Made in React.js."]
+    ]
 
     return (
         <div className = "horizontal-center" id="my-creations">
@@ -46,14 +43,12 @@ function MyCreations() {
 
                 <div id = "projects">
 
-                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} info = {info[0]}></Project>
-                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} info = {info[1]}></Project>
-                    {/* <Project project = "test" projectDesc = "test_desc" imageSource={personal_site} info = {info[2]}></Project> */}
+                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} name = {info[0][0]} info = {info[0][1]}></Project>
+                    <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} name = {info[1][0]} info = {info[1][1]}></Project>
+
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
 
                 </div>
-
-                
 
             </div>
         </div>

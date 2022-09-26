@@ -30,6 +30,12 @@
     color: white;
 }
 
+.project_body {
+    position: relative;
+    top: 10px;
+    
+}
+
 #sudoku:hover + #sudoku_desc {
     display:block;
 }

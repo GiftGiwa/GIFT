@@ -7,15 +7,10 @@ function Project(props) {
         <>
             <div className = "project" id = {props.project} ><img className = "images" src={props.imageSource}></img></div>
             <div className = "desc" id = {props.projectDesc}>
-                <p className = "body">{props.info}</p>
+                <p className = "body project_body">{props.name}; {props.info}</p>
             </div>
         </>       
     )
 }
 
 export default Project
-
-// Sudoku
-//                 <br></br> 
-                
-//                 Sudoku puzzle generator/solver, built in vanilla HTML/CSS/JavaScript.
