@@ -4,16 +4,21 @@ import "../../CSS/components.css"
 
 function Project(props) {
 
+    console.log(document.getElementById(""))
+
     return (
         <>
             <div className = "project" id = {props.project} ><img className = "images" src={props.imageSource}></img></div>
             <div className = "desc" id = {props.projectDesc}>
                 <a className = "body project_body header" style={{ color:props.headerColor }}>{props.name}</a>
-                <p className = "body project_body">
-                    {props.info}</p>
+                <p className = "body project_body">{props.info}</p>
+
+                {/* <p className = "desc_click">[click to enter]</p>
+                <p className = "desc_click">[shift + click to view on github]</p> */}
             </div>
         </>       
     )
+
 }
 
 export default Project

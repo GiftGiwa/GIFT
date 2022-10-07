@@ -6,7 +6,7 @@ import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 function Page() {
 
     function slide() {
-        document.getElementById("label").style.color = "rgba(0, 0, 0, 0)"
+        //document.getElementById("label").style.color = "rgba(0, 0, 0, 0)"
         /* anime({
             targets: '#moving',
             easing: "linear",

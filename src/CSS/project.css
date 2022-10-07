@@ -40,7 +40,7 @@
 
 .project_body {
     position: relative;
-    top: 10px;
+    top: 20px;
     padding:0px;
     margin:5px;
 }
@@ -57,9 +57,17 @@
     display:block;
 }
 
+/* [click to enter] / [click to view on github] text Styling*/
+
+.desc_click {
+    font-family: Menlo;
+    color:rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 20px;
+}
+
 
 @media only screen and (max-width: 1350px) {
-
     .project {
         width: calc((100vw - 400px - 60px) / 2);
         height: calc((100vw - 400px - 60px) / 2);
@@ -71,7 +79,6 @@
         width: calc((100vw - 50px - 60px) / 2);
         height: calc((100vw - 50px - 60px) / 2);
     }
-
 }
 
 @media only screen and (max-width: 450px) {

@@ -11,7 +11,6 @@ function MyCreations() {
     setTimeout(function () {
 
         let descriptions = document.querySelectorAll(".desc")
-        //console.log(descriptions)
 
         const onMouseMove = (e) => {
             let bounds = document.getElementById("projects").getBoundingClientRect()
@@ -25,6 +24,7 @@ function MyCreations() {
         }
 
         document.addEventListener('mousemove', onMouseMove)
+        
     }, 50)
 
 
