@@ -1,10 +1,8 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import "../../CSS/project.css"
 import "../../CSS/components.css"
 
 function Project(props) {
-
-    console.log(document.getElementById(""))
 
     return (
         <>
@@ -13,8 +11,7 @@ function Project(props) {
                 <a className = "body project_body header" style={{ color:props.headerColor }}>{props.name}</a>
                 <p className = "body project_body">{props.info}</p>
 
-                {/* <p className = "desc_click">[click to enter]</p>
-                <p className = "desc_click">[shift + click to view on github]</p> */}
+                {/* <p className = "desc_click">[shift + click to view on github]</p> */}
             </div>
         </>       
     )

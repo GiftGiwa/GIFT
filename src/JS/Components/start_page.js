@@ -5,8 +5,11 @@ import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 
 function Page() {
 
+    console.log(document.getElementById("body"))
+
     function slide() {
-        //document.getElementById("label").style.color = "rgba(0, 0, 0, 0)"
+
+        document.getElementById("label").remove()
         /* anime({
             targets: '#moving',
             easing: "linear",
@@ -14,7 +17,6 @@ function Page() {
             translateY: -80,
             duration: 0,
         }); */
-
         function move_up() {
 
             anime({
@@ -23,7 +25,6 @@ function Page() {
                 easing: "easeOutExpo",
                 duration: 1500
             })
-
             //background grid animation loop
             /* anime({
                 targets: '#moving',
@@ -51,9 +52,10 @@ function Page() {
             }, 1500)
 
         }
-
         move_up()       
     }
+
+    // document.getElementById("response").addEventListener("click", slide())
 
     return (
         <div id = "start">

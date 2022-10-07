@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import "../../CSS/my_creations.css"
 import "../../CSS/components.css"
 import sudoku from "../../Images/sudoku.png"
@@ -13,18 +13,22 @@ function MyCreations() {
         let descriptions = document.querySelectorAll(".desc")
 
         const onMouseMove = (e) => {
+
             let bounds = document.getElementById("projects").getBoundingClientRect()
 
-            descriptions.forEach((element) => {   
-                if (bounds.left != undefined && bounds.top != undefined && bounds.top != 0 && bounds.left != 0) {
-                    element.style.left = (e.clientX - bounds.left + 30) + "px";
-                    element.style.top = (e.clientY - bounds.top + 30) + "px";
+            descriptions.forEach((element) => {  
+
+                if (bounds.left !== undefined && bounds.top !== undefined && bounds.top !== 0 && bounds.left !== 0) {
+                    element.style.left = (e.clientX - bounds.left + 30) + "px"
+                    element.style.top = (e.clientY - bounds.top + 30) + "px"
                 }
-            })
+                element.addEventListener('click', function(e) {
+                    console.log("click")
+                })
+            }) 
         }
 
         document.addEventListener('mousemove', onMouseMove)
-        
     }, 50)
 
 
@@ -44,9 +48,11 @@ function MyCreations() {
 
                 <div id = "projects">
 
-                    <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} headerColor = "#4FC1FF" name = {info[0][0]} info = {info[0][1]}></Project>
+                    <a href="https://giftgiwa.github.io/Sudoku/sudoku.html" target = "_blank">
+                        <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} headerColor = "#4FC1FF" name = {info[0][0]} info = {info[0][1]}></Project>
+                    </a>
                     <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} headerColor = "#FFE600" name = {info[1][0]} info = {info[1][1]}></Project>
-
+                    
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
 
                 </div>

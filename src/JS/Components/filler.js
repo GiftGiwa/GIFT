@@ -1,5 +1,5 @@
 import "../../CSS/filler.css"
-import React, { Component }  from 'react';
+import React  from 'react';
 
 function Filler(props) {
     return (
