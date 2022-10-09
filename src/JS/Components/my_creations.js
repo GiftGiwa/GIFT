@@ -34,7 +34,7 @@ function MyCreations() {
 
     let info = [
         ["Sudoku", "A sudoku puzzle generator/checker webpage. Made in HTML, CSS, and vanilla JavaScript."],
-        ["Personal Website", "A showcase of my experience, projects and current/future programming endeavors. Made in React.js."]
+        ["Personal Website (here)", "A showcase of my experience, projects and current/future programming endeavors. Made in React.js."]
     ]
 
     return (

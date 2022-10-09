@@ -5,11 +5,9 @@ import { ReactComponent as Grid } from '../../SVGs/Grid.svg'
 
 function Page() {
 
-    console.log(document.getElementById("body"))
-
     function slide() {
 
-        document.getElementById("label").remove()
+        // document.getElementById("label").remove()
         /* anime({
             targets: '#moving',
             easing: "linear",
@@ -23,7 +21,7 @@ function Page() {
                 targets: '.intro',
                 translateY: -1 * window.innerHeight,
                 easing: "easeOutExpo",
-                duration: 1500
+                duration: 2000
             })
             //background grid animation loop
             /* anime({
@@ -47,15 +45,14 @@ function Page() {
             }); */
 
             setTimeout(function () {
-                document.querySelectorAll(".intro").forEach(el => el.remove()) //remove the start screen after click
-                
-            }, 1500)
+                document.querySelectorAll(".intro").forEach(el => el.remove()) //remove the start screen after click  
+            }, 2000)
 
         }
         move_up()       
     }
 
-    // document.getElementById("response").addEventListener("click", slide())
+    setTimeout(function() {slide()},  1000)
 
     return (
         <div id = "start">
@@ -65,9 +62,9 @@ function Page() {
             <p className="mono intro" id="doc">[DOCUMENTATION]</p>
             <h2 className="intro">GiftGiwa</h2>
             <p className="mono intro" id="SWE">software engineer.</p>
-            <p className="mono intro" id="label">[click anywhere to proceed]</p>
+            {/* <p className="mono intro" id="label">[click anywhere to proceed]</p> */}
 
-            <div className="mono" id = "response" onClick = {slide}></div>
+            <div className="mono" id = "response" ></div>
 
         </div>   
     )
