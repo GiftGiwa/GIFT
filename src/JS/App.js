@@ -7,8 +7,11 @@ import MyCreations from "./Components/my_creations"
 import Navbar from "./Components/navbar"
 import DecoGrid from "./Components/grid"
 
-
 function App() {
+
+  window.onunload = function () { // start at beginning of page after reloading
+    window.scrollTo(0, 0);
+  }
   
   return (
     <>
@@ -16,7 +19,6 @@ function App() {
       <Page />
       <AboutMe />
       <Experience />
-      {/* <DecoGrid /> */}
       <MyCreations />
       <Credits />
     </>
