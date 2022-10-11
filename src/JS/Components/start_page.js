@@ -62,6 +62,7 @@ function Page() {
             <p className="mono intro" id="doc">[DOCUMENTATION]</p>
             <h2 className="intro">GiftGiwa</h2>
             <p className="mono intro" id="SWE">software engineer.</p>
+            
             {/* <p className="mono intro" id="label">[click anywhere to proceed]</p> */}
 
             {/* <div className="mono" id = "response" ></div> */}
