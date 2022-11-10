@@ -6,9 +6,9 @@ import ExperienceCard from "./experience_card"
 function Experience() {
 
     const experience = [ // **to be filled over time
-        {
+        { // sharp
             count: "01",
-            company: "Columbia Build Lab",
+            company: "Sharp Performance",
             companyColor: "#5cbcf2",
             position: "SWE Intern",
             data: "",
@@ -16,14 +16,24 @@ function Experience() {
             "Improved login time by 4+ seconds on average in the back-end login system using C# and MySQL in Unity.",
             "Increased potential user base by 300% by app deployment to iOS devices"]
         },
-        {
-            count:"02",
+        { // better-meet
+            count: "02",
+            company: "BetterMeet",
+            companyColor: "#5cbcf2",
+            position: "SWE Intern",
+            data: "",
+            bullets: ["Program UI for BetterMeet Chrome extension, enabling employees of organizations to intuitively provide feedback on virtual meetings’ productivity.",
+            "Maintain AWS database employees’ form response analytics for 1,000 businesses.",
+            "Raise productivity of virtual meetings held by businesses and organizations by a projected 67%."]
+        },
+        { // creative mechanics lab (?)
+            count:"03",
             company: "Creative Machines Lab",
             position: "SWE",
             bullets: ["???", "???", "???"]
         },
         {
-            count:"03",
+            count:"04",
             company: "???",
             position: "???",
             bullets: ["???", "???", "???"]
@@ -38,7 +48,8 @@ function Experience() {
             </div>
 
             <div id="cards">
-                <ExperienceCard color="rgba(69, 212, 179, 0.15)" bgcolor="rgb(69, 212, 179)" id="build-lab" date = {experience[0].date} count={experience[0].count} companyColor={experience[0].companyColor} company={experience[0].company} position={experience[0].position} bullets={experience[0].bullets}></ExperienceCard>
+                <ExperienceCard color="rgba(54, 165, 224, 0.15)" bgcolor="rgb(54, 165, 224)" id="build-lab" date = {experience[0].date} count={experience[0].count} companyColor={experience[0].companyColor} company={experience[0].company} position={experience[0].position} bullets={experience[0].bullets}></ExperienceCard>
+                <ExperienceCard color="rgba(58, 224, 191, 0.15)" bgcolor="rgb(58, 224, 191)" id="build-lab" date = {experience[1].date} count={experience[1].count} companyColor={experience[1].companyColor} company={experience[1].company} position={experience[1].position} bullets={experience[1].bullets}></ExperienceCard>
                 <div id = "xp-filler">
                     <p id = "xp-ellipsis">...</p>
                 </div>

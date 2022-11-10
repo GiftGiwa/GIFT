@@ -15,6 +15,7 @@ function Page() {
             translateY: -80,
             duration: 0,
         }); */
+        
         function move_up() {
 
             anime({
