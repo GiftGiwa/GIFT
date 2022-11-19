@@ -1,0 +1,12 @@
+#canvas1 {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    top: 0px;
+    z-index:1;
+    display:contents;
+}
+#root {
+    height: 100vh;
+}
