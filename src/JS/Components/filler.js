@@ -1,7 +1,8 @@
+import React from 'react'
 import "../../CSS/filler.css"
-import React  from 'react';
 
 function Filler(props) {
+
     return (
         <div style={{backgroundColor: props.bgcolor}} className = "filler">
             <p className = "horizontal-center" id="ellipsis">•••</p>

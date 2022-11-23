@@ -4,6 +4,7 @@
     background: rgba(28, 28, 28, 0.3);
     backdrop-filter: blur(8px);
     width: 100vw;
+    height:60px;
     margin: auto;
     z-index:11;
 }

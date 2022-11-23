@@ -8,7 +8,7 @@
     padding:auto;
     padding-top:30px;
     padding-bottom:30px;
-    top:30px;
+    top:20px;
 }
 #top-header {
     padding-top:30px;
@@ -39,7 +39,7 @@
     height: 250px;
     background-color: black;
     margin:0;
-    margin-top:15px;
+    /* margin-top:15px; */
     position: absolute;
     right:65px;
     /* display: inline-block; */
@@ -102,7 +102,7 @@
         flex-direction: column;
         position:relative;
         padding-top:30px;
-        z-index:9;
+        z-index:11;
     }
 }
 

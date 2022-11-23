@@ -31,16 +31,16 @@ class Spheres extends Component() {
             () => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
         );
 
-        const sphereMaterial = new THREE.MeshPhysicalMaterial({
-            metalness:0,
-            transmission:1,
-            envMap: hdrEquirect, 
-            roughness:0, 
-            depthTest: true
-        })
+        // const sphereMaterial = new THREE.MeshPhysicalMaterial({
+        //     metalness:0,
+        //     transmission:1,
+        //     envMap: hdrEquirect, 
+        //     roughness:0, 
+        //     depthTest: true
+        // })
     
         // for personal website
-        const sphereMaterial_2 = new THREE.MeshBasicMaterial({
+        const sphereMaterial = new THREE.MeshBasicMaterial({
             color: 0xffff00, 
             opacity:0.1, 
             roughness:0.8
@@ -50,93 +50,93 @@ class Spheres extends Component() {
 
 	    const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
 
-		const position = new THREE.Vector3()
-		const quaternion = new THREE.Quaternion()
-		const scale = new THREE.Vector3()
+			const position = new THREE.Vector3()
+			const quaternion = new THREE.Quaternion()
+			const scale = new THREE.Vector3()
 
-		return function ( matrix ) {
+			return function ( matrix ) {
 
-			position.x = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
-			position.y = Math.random() * 45 - 22.5
-			position.z = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
+				position.x = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
+				position.y = Math.random() * 45 - 22.5
+				position.z = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
 
-			//rotation.x = Math.random() * 2 * Math.PI;
-			//rotation.y = Math.random() * 2 * Math.PI;
-			//rotation.z = Math.random() * 2 * Math.PI;
+				//rotation.x = Math.random() * 2 * Math.PI;
+				//rotation.y = Math.random() * 2 * Math.PI;
+				//rotation.z = Math.random() * 2 * Math.PI;
 
-			//quaternion.setFromEuler( rotation )
+				//quaternion.setFromEuler( rotation )
 
-			scale.x = scale.y = scale.z = (Math.random() * 2)
+				scale.x = scale.y = scale.z = (Math.random() * 2)
 
-			matrix.compose( position, quaternion, scale )
+				matrix.compose( position, quaternion, scale )
 
-		};
-
-	}();
-
-	let mesh //mesh to become the InstancedMesh
-	let mesh_2
-
-	const count = 50 //number of instances to be made
-
-	//animation variables (for end of code)
-
-	let period = 10 // rotation time in seconds
-	let clock = new THREE.Clock()
-	let matrix = new THREE.Matrix4()
-
-	initMesh() //initMesh method call
-	animate() //animate method call
-
-	function initMesh() { //load mesh and create instanced matrix
-
-		loader.load( 'sphere_background/ball.gltf', function ( gltf ) { //load sphere
-			gltf.scene.traverse(function(model) {
-				if (model.isMesh) {
-					model.castShadow = true
-				}
-			});
-		
-			const matrix = new THREE.Matrix4() //not the same as matrix defined above!
-
-			mesh = new THREE.InstancedMesh( gltf.scene.children[0].geometry, sphereMaterial_2, count )
-			mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-
-			mesh_2 = new THREE.InstancedMesh( gltf.scene.children[1].geometry, gltf.scene.children[1].material, count )
-			mesh_2.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-
-			for ( let i = 0; i < count; i ++ ) {
-				randomizeMatrix( matrix )
-				mesh.setMatrixAt( i, matrix )
-				mesh_2.setMatrixAt(i, matrix)
 			}
 
-			scene.add(mesh)
-			//scene.add(mesh_2)
+		}
+
+		let mesh //mesh to become the InstancedMesh
+		let mesh_2
+
+		const count = 50 //number of instances to be made
+
+		//animation variables (for end of code)
+
+		let period = 10 // rotation time in seconds
+		let clock = new THREE.Clock()
+		let matrix = new THREE.Matrix4()
+
+		initMesh() //initMesh method call
+		animate() //animate method call
+
+		function initMesh() { //load mesh and create instanced matrix
+
+			loader.load( 'sphere_background/ball.gltf', function ( gltf ) { //load sphere
+				gltf.scene.traverse(function(model) {
+					if (model.isMesh) {
+						model.castShadow = true
+					}
+				});
+			
+				const matrix = new THREE.Matrix4() //not the same as matrix defined above!
+
+				mesh = new THREE.InstancedMesh( gltf.scene.children[0].geometry, sphereMaterial, count )
+				mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
+
+				mesh_2 = new THREE.InstancedMesh( gltf.scene.children[1].geometry, gltf.scene.children[1].material, count )
+				mesh_2.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
+
+				for ( let i = 0; i < count; i ++ ) {
+					randomizeMatrix( matrix )
+					mesh.setMatrixAt( i, matrix )
+					mesh_2.setMatrixAt(i, matrix)
+				}
+
+				scene.add(mesh)
+				//scene.add(mesh_2)
+			
+			}, undefined, function ( error ) {
+				console.error( error )
+			} );	
+
+		}
+
+		//light
+		const light = new THREE.AmbientLight( 0xffffff )
+		scene.add( light )
+
+		function animate() {
+
+			requestAnimationFrame( animate )
+			//console.log(clock.getDelta());
+			time += 0.00001
 		
-		}, undefined, function ( error ) {
-			console.error( error )
-		} );	
+			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
 
-	}
-
-	//light
-	const light = new THREE.AmbientLight( 0xffffff )
-	scene.add( light )
-
-    function animate() {
-
-		requestAnimationFrame( animate )
-		//console.log(clock.getDelta());
-		time += 0.00001
-	
-		matrix.makeRotationY(0.025 * 2 * Math.PI / period)
-
-		camera.lookAt(new THREE.Vector3(0, 0, 0)) //keep camera looking at center of scene
-		camera.position.applyMatrix4(matrix)
-		
-		renderer.render( scene, camera )
-	}
+			camera.lookAt(new THREE.Vector3(0, 0, 0)) //keep camera looking at center of scene
+			camera.position.applyMatrix4(matrix)
+			
+			renderer.render( scene, camera )
+		}
 
 
 
