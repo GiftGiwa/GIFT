@@ -1,64 +1,54 @@
-import * as THREE from 'sphere_background/imports/three.js';
-import { GLTFLoader } from 'sphere_background/imports/GLTFLoader.js';
-//import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js'
+import React, { Component } from "react";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { RGBELoader } from 'sphere_background/imports/RGBELoader.js';
 
-//delay set to make time for startup animation
-//setTimeout(function() {three()}, 2000)
-let time = 0.00
+class Spheres extends Component() {
 
-//three()
+    componentDidMount() {
 
-function three() {
+        let time = 0.00
 
-	const scene = new THREE.Scene();
-	scene.background = new THREE.Color(0xffffff);
-	const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
-	console.log(window.innerWidth * window.innerHeight)
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff);
+        const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        console.log(window.innerWidth * window.innerHeight)
 
-	//readjust camera to focus on spheres
-	camera.position.z = -60;
-	camera.position.y = 6;
-	camera.lookAt(0, 0, 100)
+        //readjust camera to focus on spheres
+        camera.position.z = -60;
+        camera.position.y = 6;
+        camera.lookAt(0, 0, 100)
 
-	const renderer = new THREE.WebGLRenderer({alpha: true}) // {alpha: true} makes the background transparent
+        const renderer = new THREE.WebGLRenderer({alpha: true}) // {alpha: true} makes the background transparent
 
-	renderer.setSize(window.innerWidth, window.innerHeight)
-	renderer.setPixelRatio( window.devicePixelRatio);
-	
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        renderer.setPixelRatio( window.devicePixelRatio);
 
-	container.appendChild( renderer.domElement );
+        let root = document.getElementById("root");
 
-	//HDRI MAP
-	const hdrEquirect = new RGBELoader().load(
-		"./sphere_background/paul_lobe_haus_4k.hdr",  
-		() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
-	);
+        const hdrEquirect = new RGBELoader().load(
+            "./sphere_background/paul_lobe_haus_4k.hdr",  
+            () => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
+        );
 
-	//orbit controls
-	//const controls = new OrbitControls( camera, renderer.domElement );
+        const sphereMaterial = new THREE.MeshPhysicalMaterial({
+            metalness:0,
+            transmission:1,
+            envMap: hdrEquirect, 
+            roughness:0, 
+            depthTest: true
+        })
+    
+        // for personal website
+        const sphereMaterial_2 = new THREE.MeshBasicMaterial({
+            color: 0xffff00, 
+            opacity:0.1, 
+            roughness:0.8
+        })
 
-	//materials
+        const loader = new GLTFLoader()
 
-	// "glass"
-	const sphereMaterial = new THREE.MeshPhysicalMaterial({
-		metalness:0,
-		transmission:1,
-		envMap: hdrEquirect, 
-		roughness:0, 
-		depthTest: true
-	})
-
-	// for personal website
-	const sphereMaterial_2 = new THREE.MeshBasicMaterial({
-		color: 0xffff00, 
-		opacity:0.1, 
-		roughness:0.8
-	})
-
-	const loader = new GLTFLoader()
-
-	const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
+	    const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
 
 		const position = new THREE.Vector3()
 		const quaternion = new THREE.Quaternion()
@@ -81,6 +71,7 @@ function three() {
 			matrix.compose( position, quaternion, scale )
 
 		};
+
 	}();
 
 	let mesh //mesh to become the InstancedMesh
@@ -133,8 +124,7 @@ function three() {
 	const light = new THREE.AmbientLight( 0xffffff )
 	scene.add( light )
 
-	//render
-	function animate() {
+    function animate() {
 
 		requestAnimationFrame( animate )
 		//console.log(clock.getDelta());
@@ -147,4 +137,21 @@ function three() {
 		
 		renderer.render( scene, camera )
 	}
+
+
+
+    }
+
+    render() {
+        return <div ref={ref => (this.mount = ref)} />;
+    }
 }
+
+function Canvas() {
+    return (
+        <div id = "canvas"></div>
+    )
+}
+
+export default Spheres
+//export default Canvas

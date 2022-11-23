@@ -2,11 +2,11 @@
 
 /* 1d2026 */
 
-/* #start {
-  display: block;
+#start {
   position:relative;
-  top:0;
-} */
+  display: block;
+  padding:auto;
+}
 
 body {
   background-color: #1c1c1c;

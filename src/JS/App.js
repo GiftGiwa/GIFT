@@ -5,7 +5,7 @@ import Credits from "./Components/credits"
 import Experience from "./Components/experience"
 import MyCreations from "./Components/my_creations"
 import Navbar from "./Components/navbar"
-import Canvas from "./Components/canvas.js"
+import Canvas from "./Components/canvas"
 
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Page />
-      {/* <Canvas /> */}
+      {/* <Page /> */}
+      <Canvas />
       <AboutMe />
       <Experience />
       <MyCreations />

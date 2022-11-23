@@ -41,9 +41,9 @@
     margin:0;
     margin-top:15px;
     position: absolute;
-    right:70px;
-    display: inline-block;
-    top: 50%;
+    right:65px;
+    /* display: inline-block; */
+    top: 55%;
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);

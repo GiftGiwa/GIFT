@@ -6,7 +6,6 @@ import "../../CSS/start_page.css"
 function Page() {
 
     // function slide() {
-
     //     // document.getElementById("label").remove()
     //     /* anime({
     //         targets: '#moving',
@@ -14,10 +13,8 @@ function Page() {
     //         translateX: -2520,
     //         translateY: -80,
     //         duration: 0,
-    //     }); */
-        
+    //     }); */  
     //     function move_up() {
-
     //         anime({
     //             targets: '.intro #response',
     //             translateY: -1 * window.innerHeight,
@@ -48,9 +45,7 @@ function Page() {
     //         setTimeout(function () {
     //             document.querySelectorAll(".intro").forEach(el => el.remove()) //remove the start screen after click  
     //         }, 2000)
-
-    //     }
-              
+    //     }      
     // }
     //setTimeout(function() {slide()},  1000)
 
