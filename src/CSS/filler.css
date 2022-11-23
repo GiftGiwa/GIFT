@@ -1,7 +1,7 @@
 .filler {
     /* background-color: rgb(20, 20, 20); */
-    width: calc((100vw - 600px - 60px) / 3);
-    height: calc((100vw - 600px - 60px) / 3);
+    width: calc((100vw - 400px - 60px) / 3);
+    height: calc((100vw - 400px - 60px) / 3);
     position: relative;
     margin:0;
     display:inline-block;

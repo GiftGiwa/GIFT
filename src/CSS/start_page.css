@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-/* html, body {
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+/* 1d2026 */
 
-  width: 100vw;
+/* #start {
+  display: block;
+  position:relative;
+  top:0;
 } */
 
-/* 1d2026 */
 body {
   background-color: #1c1c1c;
   -webkit-font-smoothing: antialiased;
@@ -18,9 +17,10 @@ body {
   overflow-x:hidden;
 }
 
-#root {
+/* #root {
   overflow-y:hidden;
-}
+  height:auto;
+} */
 
 h2 {
   z-index:13;

@@ -4,7 +4,7 @@
 
 #my-creations {
     display:block;
-    width: calc(100vw - 600px);
+    width: calc(100vw - 400px);
     z-index:7;
     margin:0;
     padding-top: 50px;
@@ -34,7 +34,7 @@
     transform: translateX(-50%);
     position: relative;
     margin: 0;
-    width: calc(100vw - 600px - 60px);
+    width: calc(100vw - 400px - 60px);
 }
 
 /* Ellipsis (for filler) */

@@ -2,7 +2,6 @@ import React  from 'react';
 import "../../CSS/components.css"
 import "../../CSS/experience_card.css"
 
-
 function ExperienceCard(props) {
 
     return (
@@ -17,5 +16,3 @@ function ExperienceCard(props) {
 }
 
 export default ExperienceCard
-
-/* ○ <--might use this character later*/

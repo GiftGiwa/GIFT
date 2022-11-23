@@ -1,14 +1,13 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
-import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
-import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js'
-import { RGBELoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/RGBELoader.js';
-
+import * as THREE from 'sphere_background/imports/three.js';
+import { GLTFLoader } from 'sphere_background/imports/GLTFLoader.js';
+//import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js'
+import { RGBELoader } from 'sphere_background/imports/RGBELoader.js';
 
 //delay set to make time for startup animation
 //setTimeout(function() {three()}, 2000)
 let time = 0.00
 
-three()
+//three()
 
 function three() {
 
@@ -22,13 +21,14 @@ function three() {
 	camera.position.y = 6;
 	camera.lookAt(0, 0, 100)
 
-	const renderer = new THREE.WebGLRenderer() // {alpha: true} makes the background transparent
+	const renderer = new THREE.WebGLRenderer({alpha: true}) // {alpha: true} makes the background transparent
 
 	renderer.setSize( /*0.666 * */ window.innerWidth, /*0.666 * */window.innerHeight)
 	renderer.setPixelRatio( window.devicePixelRatio);
 	
 	//document.body.appendChild( renderer.domElement );
-	document.getElementById('canvas').appendChild( renderer.domElement )
+	//document.getElementById('canvas').appendChild( renderer.domElement )
+	this.mount.appendChild( renderer.domElement );
 
 	//HDRI MAP
 	const hdrEquirect = new RGBELoader().load(
@@ -37,7 +37,7 @@ function three() {
 	);
 
 	//orbit controls
-	const controls = new OrbitControls( camera, renderer.domElement );
+	//const controls = new OrbitControls( camera, renderer.domElement );
 
 	//materials
 
@@ -149,3 +149,5 @@ function three() {
 		renderer.render( scene, camera )
 	}
 }
+
+export default three;
