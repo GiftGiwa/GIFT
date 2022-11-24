@@ -7,13 +7,11 @@
     padding-bottom: 30px;
     position: relative;
 }
-
 #experience-header {
     width: calc(100vw - 600px);
     position: relative;
-    padding-bottom: 20px;
+    padding:20px;
 }
-
 #cards {
     display:grid;
 }
@@ -42,6 +40,12 @@
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Repsonsive Design Rules */

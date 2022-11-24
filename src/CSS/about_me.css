@@ -68,10 +68,18 @@
 
 /* Technologies/Programming Languages Icons */
 
-#technologies {
-    position:relative;
-    display:block;
+.technologies::selection {
+    background:#fff;
+    color: #1c1c1c;
 }
+
+#html {color:rgb(255, 122, 45)}
+#css {color:rgb(0, 183, 255)}
+#js {color:rgb(255, 217, 0)}
+#python {color:rgb(90, 128, 255)}
+#java {color:rgb(255, 70, 70)}
+#c-sharp {color:rgb(172, 109, 255)}
+#three-js {color:rgb(158, 158, 158)}
 
 @media only screen and (max-width: 1350px) {
 

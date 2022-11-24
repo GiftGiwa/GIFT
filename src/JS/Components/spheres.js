@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { RGBELoader } from 'sphere_background/imports/RGBELoader.js';
+import * as THREE from "./sphere_background/imports/three.js";
+import { GLTFLoader } from "./sphere_background/imports/GLTFLoader.js";
+import { RGBELoader } from "./sphere_background/imports/RGBELoader.js";
 
 class Spheres extends Component() {
 
-    componentDidMount() {
+
+	componentDidMount() {
 
         let time = 0.00
 
-        const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
-        const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        const scene = new THREE.Scene()
+        scene.background = new THREE.Color(0xffffff)
+        const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 )
         console.log(window.innerWidth * window.innerHeight)
 
         //readjust camera to focus on spheres
@@ -22,9 +23,11 @@ class Spheres extends Component() {
         const renderer = new THREE.WebGLRenderer({alpha: true}) // {alpha: true} makes the background transparent
 
         renderer.setSize(window.innerWidth, window.innerHeight)
-        renderer.setPixelRatio( window.devicePixelRatio);
+        renderer.setPixelRatio( window.devicePixelRatio)
 
-        let root = document.getElementById("root");
+        let canvas = document.getElementById("canvas")
+		canvas.appendChild(renderer.domElement)
+
 
         const hdrEquirect = new RGBELoader().load(
             "./sphere_background/paul_lobe_haus_4k.hdr",  
@@ -47,6 +50,8 @@ class Spheres extends Component() {
         })
 
         const loader = new GLTFLoader()
+
+		console.log(loader)
 
 	    const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
 
@@ -112,7 +117,6 @@ class Spheres extends Component() {
 				}
 
 				scene.add(mesh)
-				//scene.add(mesh_2)
 			
 			}, undefined, function ( error ) {
 				console.error( error )
@@ -128,7 +132,8 @@ class Spheres extends Component() {
 
 			requestAnimationFrame( animate )
 			//console.log(clock.getDelta());
-			time += 0.00001
+
+			time += 0.0001
 		
 			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
 
@@ -136,9 +141,8 @@ class Spheres extends Component() {
 			camera.position.applyMatrix4(matrix)
 			
 			renderer.render( scene, camera )
+
 		}
-
-
 
     }
 
@@ -147,11 +151,4 @@ class Spheres extends Component() {
     }
 }
 
-function Canvas() {
-    return (
-        <div id = "canvas"></div>
-    )
-}
-
 export default Spheres
-//export default Canvas
