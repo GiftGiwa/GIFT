@@ -17,11 +17,6 @@ body {
   overflow-x:hidden;
 }
 
-/* #root {
-  overflow-y:hidden;
-  height:auto;
-} */
-
 h2 {
   z-index:13;
   font-family:'Poppins';
