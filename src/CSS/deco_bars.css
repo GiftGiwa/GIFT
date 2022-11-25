@@ -1,0 +1,30 @@
+#left {
+    width: 10px;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    background: linear-gradient(160deg, #FFE600 1.26%, #00FBFF 97.48%);
+    z-index: 95;
+    animation: move 5s ease infinite;
+}
+
+#right {
+    width: 10px;
+    height: 100vh;
+    position: fixed;
+    right:0;
+    background: linear-gradient(160deg, #FFE600 1.26%, #00FBFF 97.48%);
+    z-index: 95;
+}
+
+@keyframes move {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}

@@ -15,16 +15,28 @@
     display: inline-block;
 
     -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-#root {
-    overflow: hidden;
+span::selection {
+    background:#fff;
+    color: #1c1c1c;
+}
+
+#canvas {
+    position:fixed;
+    z-index:1;
+    width: 100vw;
     height: 100vh;
 }
+
+/* #root {
+    overflow: hidden;
+    height: 100%;
+} */
 
 .body {
     font-family: 'Inter', sans-serif;
