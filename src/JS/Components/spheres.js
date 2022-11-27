@@ -1,12 +1,14 @@
 import React, { Component } from "react"
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
-import RGBELoader from "three/examples/jsm/loaders/RGBELoader.js"
 import * as THREE from "three" 
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
+import { RGBELoader } from "three/examples/js/loaders/RGBELoader.js"
 import "../../CSS/components.css"              
 
 class Spheres extends Component {
 
 	componentDidMount() {
+
+		let time = 0.00
 
 		const scene = new THREE.Scene();
 		//scene.background = new THREE.Color(0xffffff);
@@ -16,7 +18,7 @@ class Spheres extends Component {
 		camera.position.y = 6;
 		camera.lookAt(0, 0, 100)
 		
-		const renderer = new THREE.WebGLRenderer()
+		const renderer = new THREE.WebGLRenderer({alpha:true})
 		renderer.setSize( window.innerWidth, window.innerHeight )
 
 		window.addEventListener( 'resize', onWindowResize, false );
@@ -30,36 +32,35 @@ class Spheres extends Component {
 
 		}
 
-
-
 		// document.body.appendChild( renderer.domElement )
 		// use ref as a mount point of the Three.js scene instead of the document.body
 		this.mount.appendChild( renderer.domElement )
 
-		var geometry = new THREE.BoxGeometry( 1, 1, 1 )
-		var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } )
-		var cube = new THREE.Mesh( geometry, material )
-		scene.add( cube )
 
 		//hdri map
-		// const hdrEquirect = new RGBELoader().load(
-		// 	"./paul_lobe_haus_4k.hdr",  
-		// 	() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
-		// )
+		const hdrEquirect = new RGBELoader().load(
+			"./paul_lobe_haus_4k.hdr",  
+			() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
+		)
 
 		// "glass"
-		// const sphereMaterial = new THREE.MeshPhysicalMaterial({
-		// 	metalness:0,
-		// 	transmission:1,
-		// 	envMap: hdrEquirect, 
-		// 	roughness:0, 
-		// 	depthTest: true
-		// })
+		const sphereMaterial = new THREE.MeshPhysicalMaterial({
+			metalness:0,
+			transmission:1,
+			envMap: hdrEquirect, 
+			roughness:0, 
+			depthTest: true
+		})
 
 		// for personal website
-		const sphereMaterial_2 = new THREE.MeshBasicMaterial({
+		const sphereMaterial_2 = new THREE.MeshPhongMaterial({
 			color: 0xffffff
 		})
+
+		// var geometry = new THREE.SphereGeometry( 1, 1, 1 )
+		// var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } )
+		// var cube = new THREE.Mesh( geometry, sphereMaterial_2 )
+		// scene.add( cube )
 
 		const loader = new GLTFLoader()
 
@@ -89,11 +90,11 @@ class Spheres extends Component {
 		let clock = new THREE.Clock()
 		let matrix = new THREE.Matrix4()
 
-		
+
 
 		let initializeMesh = function () {
 
-			loader.load( 'sphere_background/ball.gltf', function ( gltf ) { //load sphere
+			loader.load( './ball.gltf', function ( gltf ) { //load sphere
 				gltf.scene.traverse(function(model) {
 					if (model.isMesh) {
 						model.castShadow = true
@@ -126,19 +127,26 @@ class Spheres extends Component {
 
 		}
 
-		//initializeMesh()
+		initializeMesh()
 		
 
-		let light = new THREE.DirectionalLight( 0xffffff );
-		scene.add(light);
+		// let light = new THREE.DirectionalLight( 0xffffff )
+		// scene.add(light)
+
+		let ambient = new THREE.AmbientLight( 0xffffff)
+		scene.add(ambient)
 
 		let animate = function () {
 
 			requestAnimationFrame( animate );
-			cube.rotation.x += 0.01;
-			cube.rotation.y += 0.01;
+			// cube.rotation.x += 0.01;
+			// cube.rotation.y += 0.01;
+			time += 0.00001
 
 			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
+
+			camera.lookAt(new THREE.Vector3(0, 0, 0)) //keep camera looking at center of scene
+			camera.position.applyMatrix4(matrix)
 
 			renderer.render( scene, camera );
 		};
