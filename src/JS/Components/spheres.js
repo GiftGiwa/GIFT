@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import * as THREE from "three" 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
-import { RGBELoader } from "three/examples/js/loaders/RGBELoader.js"
+//import { RGBELoader } from "three/examples/js/loaders/RGBELoader.js"
 import "../../CSS/components.css"              
 
 class Spheres extends Component {
@@ -12,10 +12,10 @@ class Spheres extends Component {
 
 		const scene = new THREE.Scene();
 		//scene.background = new THREE.Color(0xffffff);
-		const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 )
+		const camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 )
 
-		camera.position.z = -60;
-		camera.position.y = 6;
+		camera.position.z = -30;
+		//camera.position.y = 6;
 		camera.lookAt(0, 0, 100)
 		
 		const renderer = new THREE.WebGLRenderer({alpha:true})
@@ -36,25 +36,29 @@ class Spheres extends Component {
 		// use ref as a mount point of the Three.js scene instead of the document.body
 		this.mount.appendChild( renderer.domElement )
 
-
+		/*
 		//hdri map
-		const hdrEquirect = new RGBELoader().load(
-			"./paul_lobe_haus_4k.hdr",  
-			() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
-		)
+		// const hdrEquirect = new RGBELoader()
+		
+		// hdrEquirect.load(
+		// 	"./paul_lobe_haus_4k.hdr",  
+		// 	() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
+		// ) */
+
+		const geometry = new THREE.SphereGeometry(5, 40, 20)
 
 		// "glass"
 		const sphereMaterial = new THREE.MeshPhysicalMaterial({
 			metalness:0,
 			transmission:1,
-			envMap: hdrEquirect, 
+			/*envMap: hdrEquirect,*/ 
 			roughness:0, 
 			depthTest: true
 		})
 
 		// for personal website
 		const sphereMaterial_2 = new THREE.MeshPhongMaterial({
-			color: 0xffffff
+			color: 0x2d2d2d
 		})
 
 		// var geometry = new THREE.SphereGeometry( 1, 1, 1 )
@@ -62,7 +66,7 @@ class Spheres extends Component {
 		// var cube = new THREE.Mesh( geometry, sphereMaterial_2 )
 		// scene.add( cube )
 
-		const loader = new GLTFLoader()
+		//const loader = new GLTFLoader()
 
 		const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
 
@@ -72,62 +76,69 @@ class Spheres extends Component {
 	
 			return function ( matrix ) {
 	
-				position.x = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
-				position.y = Math.random() * 45 - 22.5
-				position.z = (Math.random() * 45 - 22.5) * (window.innerWidth / window.innerHeight)
+				position.x = (Math.random() * 50 - 25) * (window.innerWidth / window.innerHeight)
+				position.y = Math.random() * 50 - 25
+				position.z = (Math.random() * 50 - 25) * (window.innerWidth / window.innerHeight)
 	
-				scale.x = scale.y = scale.z = (Math.random() * 2)
+				scale.x = scale.y = scale.z = (Math.random() * 0.5)
 	
 				matrix.compose( position, quaternion, scale )
 	
 			};
 		}();
 
+		// let mesh = new THREE.Mesh(geometry, sphereMaterial_2)
 		let mesh
-		const count = 50
+		const count = 70
 
-		let period = 10 // rotation time in seconds
-		let clock = new THREE.Clock()
-		let matrix = new THREE.Matrix4()
+		let period = 15 // rotation time in seconds
+		const matrix = new THREE.Matrix4()
 
+		mesh = new THREE.InstancedMesh( geometry, sphereMaterial_2, count )
+		mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
 
-
-		let initializeMesh = function () {
-
-			loader.load( './ball.gltf', function ( gltf ) { //load sphere
-				gltf.scene.traverse(function(model) {
-					if (model.isMesh) {
-						model.castShadow = true
-					}
-				});
-
-				console.log("initialized!")
-			
-				const matrix = new THREE.Matrix4() //not the same as matrix defined above!
-	
-				mesh = new THREE.InstancedMesh( gltf.scene.children[0].geometry, sphereMaterial_2, count )
-				mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-	
-				// mesh_2 = new THREE.InstancedMesh( gltf.scene.children[1].geometry, gltf.scene.children[1].material, count )
-				// mesh_2.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-	
-				for ( let i = 0; i < count; i ++ ) {
-					randomizeMatrix( matrix )
-					mesh.setMatrixAt( i, matrix )
-					// mesh_2.setMatrixAt(i, matrix)
-				}
-	
-				scene.add(mesh)
-				//scene.add(mesh_2)
-				
-			
-			}, undefined, function ( error ) {
-				console.error( error )
-			} );	
-
+		for ( let i = 0; i < count; i ++ ) {
+			randomizeMatrix( matrix )
+			mesh.setMatrixAt( i, matrix )
 		}
 
-		initializeMesh()
+		scene.add(mesh);
+
+		// let initializeMesh = function () {
+
+		// 	loader.load( './ball.gltf', function ( gltf ) { //load sphere
+		// 		// gltf.scene.traverse(function(model) {
+		// 		// 	if (model.isMesh) {
+		// 		// 		model.castShadow = true
+		// 		// 	}
+		// 		// });
+
+		// 		console.log("initialized!")
+			
+		// 		const matrix = new THREE.Matrix4() //not the same as matrix defined above!
+	
+		// 		mesh = new THREE.InstancedMesh( gltf.scene.children[0].geometry, sphereMaterial_2, count )
+		// 		mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
+	
+		// 		// mesh_2 = new THREE.InstancedMesh( gltf.scene.children[1].geometry, gltf.scene.children[1].material, count )
+		// 		// mesh_2.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
+	
+		// 		for ( let i = 0; i < count; i ++ ) {
+		// 			randomizeMatrix( matrix )
+		// 			mesh.setMatrixAt( i, matrix )
+		// 			// mesh_2.setMatrixAt(i, matrix)
+		// 		}
+	
+		// 		scene.add(mesh)
+		// 		//scene.add(mesh_2)
+				
+		// 	}, undefined, function ( error ) {
+		// 		console.error( error )
+		// 	} );	
+
+		// }
+
+		// initializeMesh()
 		
 
 		// let light = new THREE.DirectionalLight( 0xffffff )

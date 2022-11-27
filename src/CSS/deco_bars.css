@@ -1,5 +1,5 @@
 #left {
-    width: 5px;
+    width: 3px;
     height: 100vh;
     position: fixed;
     left:0;
@@ -9,7 +9,7 @@
 }
 
 #right {
-    width: 5px;
+    width: 3px;
     height: 100vh;
     position: fixed;
     right:0;
