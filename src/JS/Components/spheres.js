@@ -12,10 +12,11 @@ class Spheres extends Component {
 
 		const scene = new THREE.Scene();
 		//scene.background = new THREE.Color(0xffffff);
+
+		console.log(window.screen.width);
 		const camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 )
 
 		camera.position.z = -30;
-		//camera.position.y = 6;
 		camera.lookAt(0, 0, 100)
 		
 		const renderer = new THREE.WebGLRenderer({alpha:true})
@@ -36,37 +37,20 @@ class Spheres extends Component {
 		// use ref as a mount point of the Three.js scene instead of the document.body
 		this.mount.appendChild( renderer.domElement )
 
-		/*
-		//hdri map
-		// const hdrEquirect = new RGBELoader()
-		
-		// hdrEquirect.load(
-		// 	"./paul_lobe_haus_4k.hdr",  
-		// 	() => { hdrEquirect.mapping = THREE.EquirectangularReflectionMapping; }
-		// ) */
-
 		const geometry = new THREE.SphereGeometry(5, 40, 20)
 
 		// "glass"
 		const sphereMaterial = new THREE.MeshPhysicalMaterial({
 			metalness:0,
 			transmission:1,
-			/*envMap: hdrEquirect,*/ 
 			roughness:0, 
 			depthTest: true
 		})
 
 		// for personal website
 		const sphereMaterial_2 = new THREE.MeshPhongMaterial({
-			color: 0x2d2d2d
+			color: 0x262626
 		})
-
-		// var geometry = new THREE.SphereGeometry( 1, 1, 1 )
-		// var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } )
-		// var cube = new THREE.Mesh( geometry, sphereMaterial_2 )
-		// scene.add( cube )
-
-		//const loader = new GLTFLoader()
 
 		const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
 
@@ -87,7 +71,6 @@ class Spheres extends Component {
 			};
 		}();
 
-		// let mesh = new THREE.Mesh(geometry, sphereMaterial_2)
 		let mesh
 		const count = 70
 
@@ -104,43 +87,6 @@ class Spheres extends Component {
 
 		scene.add(mesh);
 
-		// let initializeMesh = function () {
-
-		// 	loader.load( './ball.gltf', function ( gltf ) { //load sphere
-		// 		// gltf.scene.traverse(function(model) {
-		// 		// 	if (model.isMesh) {
-		// 		// 		model.castShadow = true
-		// 		// 	}
-		// 		// });
-
-		// 		console.log("initialized!")
-			
-		// 		const matrix = new THREE.Matrix4() //not the same as matrix defined above!
-	
-		// 		mesh = new THREE.InstancedMesh( gltf.scene.children[0].geometry, sphereMaterial_2, count )
-		// 		mesh.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-	
-		// 		// mesh_2 = new THREE.InstancedMesh( gltf.scene.children[1].geometry, gltf.scene.children[1].material, count )
-		// 		// mesh_2.instanceMatrix.setUsage( THREE.DynamicDrawUsage )
-	
-		// 		for ( let i = 0; i < count; i ++ ) {
-		// 			randomizeMatrix( matrix )
-		// 			mesh.setMatrixAt( i, matrix )
-		// 			// mesh_2.setMatrixAt(i, matrix)
-		// 		}
-	
-		// 		scene.add(mesh)
-		// 		//scene.add(mesh_2)
-				
-		// 	}, undefined, function ( error ) {
-		// 		console.error( error )
-		// 	} );	
-
-		// }
-
-		// initializeMesh()
-		
-
 		// let light = new THREE.DirectionalLight( 0xffffff )
 		// scene.add(light)
 
@@ -150,8 +96,7 @@ class Spheres extends Component {
 		let animate = function () {
 
 			requestAnimationFrame( animate );
-			// cube.rotation.x += 0.01;
-			// cube.rotation.y += 0.01;
+
 			time += 0.00001
 
 			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
@@ -161,7 +106,6 @@ class Spheres extends Component {
 
 			renderer.render( scene, camera );
 		};
-
     
 		animate()
 	}
