@@ -1,5 +1,5 @@
-import "../../CSS/deco_bars.css"
 import React from "react"
+import "../../CSS/deco_bars.css"
 
 function DecoBars() {
 

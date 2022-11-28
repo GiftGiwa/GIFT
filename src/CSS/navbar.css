@@ -1,13 +1,13 @@
 #navbar {
     position: fixed;
     top: 0px;
-    background: rgba(28, 28, 28, 0.3);
-    backdrop-filter: blur(8px);
+    background: rgba(57, 57, 57, 0.248);
+    backdrop-filter: blur(10px);
     width: 100vw;
     margin: auto;
     z-index:11;
-    max-width : 10000px;
-    overflow-x : auto;
+    /* max-width : 10000px;
+    overflow-x : auto; */
 }
 
 /* ul {

@@ -1,0 +1,9 @@
+#frost {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(28, 28, 28, 0.23);
+    backdrop-filter: blur(7.5px);
+    position:fixed;
+    top:0;
+    z-index:2;
+}

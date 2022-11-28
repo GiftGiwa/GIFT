@@ -49,7 +49,7 @@ class Spheres extends Component {
 
 		// for personal website
 		const sphereMaterial_2 = new THREE.MeshPhongMaterial({
-			color: 0x262626
+			color: 0x2e2e2e
 		})
 
 		const randomizeMatrix = function () { //randomize location and size for each instance of the sphere
@@ -64,7 +64,7 @@ class Spheres extends Component {
 				position.y = Math.random() * 50 - 25
 				position.z = (Math.random() * 50 - 25) * (window.innerWidth / window.innerHeight)
 	
-				scale.x = scale.y = scale.z = (Math.random() * 0.5)
+				scale.x = scale.y = scale.z = (Math.random() * 0.5) + 0.2
 	
 				matrix.compose( position, quaternion, scale )
 	

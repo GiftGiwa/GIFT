@@ -8,6 +8,7 @@ import Navbar from "./Components/navbar"
 import Spheres from "./Components/spheres"
 import DecoBars from "./Components/deco_bars"
 import WIP from "./Components/WIP"
+import Frost from "./Components/frost"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       {/* <Page /> */}
       <Spheres />
       <DecoBars />
+      <Frost />
       <WIP />
       <AboutMe />
       <Experience />
