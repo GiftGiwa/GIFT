@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "f21de14fa82396629b9c",
-    "url": "/gift-giwa/static/css/main.7048879e.chunk.css"
+    "revision": "187ef7eec52c453c3924",
+    "url": "/gift-giwa/static/css/main.e3f8412c.chunk.css"
   },
   {
-    "revision": "f21de14fa82396629b9c",
-    "url": "/gift-giwa/static/js/main.8b647833.chunk.js"
+    "revision": "187ef7eec52c453c3924",
+    "url": "/gift-giwa/static/js/main.98fbb28a.chunk.js"
   },
   {
-    "revision": "8f583cb15e20c8d76bc0",
-    "url": "/gift-giwa/static/js/runtime~main.b72f8559.js"
+    "revision": "26cc713110261de53ecf",
+    "url": "/gift-giwa/static/js/runtime~main.3da977ee.js"
   },
   {
     "revision": "5d634f5467868e0e4bcc",
     "url": "/gift-giwa/static/js/2.7eea9955.chunk.js"
   },
   {
-    "revision": "319229a88ac4ee485578",
-    "url": "/gift-giwa/static/js/3.2b500963.chunk.js"
+    "revision": "2f5372180e6248b85609",
+    "url": "/gift-giwa/static/js/3.9bbe71da.chunk.js"
   },
   {
     "revision": "39a50c9cc9c6bd056f3c37e300115947",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/gift-giwa/static/media/Logos.483ef11c.svg"
   },
   {
-    "revision": "492a2fb90816e8cbf56a794144802c6f",
+    "revision": "137ad0d3e35ada4d065d39f7fe3396f9",
     "url": "/gift-giwa/index.html"
   }
 ];

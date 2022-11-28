@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gift-giwa/precache-manifest.c34359565439f410e0ed76e44e4b08b0.js"
+  "/gift-giwa/precache-manifest.69c00dbe23c9aec7a018c947ba36237e.js"
 );
 
 workbox.clientsClaim();
