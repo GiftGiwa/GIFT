@@ -7,6 +7,7 @@ import MyCreations from "./Components/my_creations"
 import Navbar from "./Components/navbar"
 import Spheres from "./Components/spheres"
 import DecoBars from "./Components/deco_bars"
+import WIP from "./Components/WIP"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {/* <Page /> */}
       <Spheres />
       <DecoBars />
+      <WIP />
       <AboutMe />
       <Experience />
       <MyCreations />

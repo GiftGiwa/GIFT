@@ -1,0 +1,11 @@
+#wip {
+    font-size: 80vh;
+    font-family:Arial;
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.03);
+    display:block;
+    z-index: 99;
+    text-align: center;
+}
