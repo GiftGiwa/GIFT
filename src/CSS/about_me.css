@@ -55,6 +55,7 @@
 #columbia {
     color: #5cbcf2;
     text-decoration: none;
+    transition: 0.15s;
 }
 
 #columbia::selection {
