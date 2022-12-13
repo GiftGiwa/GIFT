@@ -69,6 +69,7 @@ class Spheres extends Component {
 				matrix.compose( position, quaternion, scale )
 	
 			};
+			
 		}();
 
 		let mesh
