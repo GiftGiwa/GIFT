@@ -16,11 +16,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Page /> */}
-      <Spheres />
+      {/* <Spheres /> */}
       <DecoBars />
       <Frost />
-      <WIP />
+      {/* <WIP /> */}
       <AboutMe />
       <Experience />
       <MyCreations />
