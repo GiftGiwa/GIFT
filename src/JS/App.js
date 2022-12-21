@@ -15,11 +15,12 @@ function App() {
 
   return (
     <>
+      <Page />
       <Navbar />
       {/* <Spheres /> */}
       <DecoBars />
       <Frost />
-      {/* <WIP /> */}
+      <WIP />
       <AboutMe />
       <Experience />
       <MyCreations />

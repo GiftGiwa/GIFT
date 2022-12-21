@@ -5,7 +5,8 @@
 #start {
   position:relative;
   display: block;
-  padding:auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -106,7 +107,7 @@ h2 {
 
 /* gray background rectangle */
 
-#bg_rect {
+/* #bg_rect {
   width: 100vw;
   margin:auto;
   height: 110vh;
@@ -114,18 +115,18 @@ h2 {
   background-color: rgb(27, 27, 27);
   position: absolute;
   top: 100vh;
-}
+} 
 
 #bg_rect_2 {
   width: 100vw;
   margin:auto;
-  height: 5920px; /* + 100vh */
+  height: 5920px;
   z-index: 4;
   background-color: rgb(27, 27, 27);
   position: absolute;
   top: 100vh;
   overflow-y: hidden;
-}
+} */
 
 /* Top Gradient Movement */
 
