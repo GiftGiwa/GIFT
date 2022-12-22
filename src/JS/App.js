@@ -10,7 +10,6 @@ import DecoBars from "./Components/deco_bars"
 import WIP from "./Components/WIP"
 import Frost from "./Components/frost"
 
-
 function App() {
 
   return (
@@ -20,7 +19,7 @@ function App() {
       {/* <Spheres /> */}
       <DecoBars />
       <Frost />
-      <WIP />
+      {/* <WIP /> */}
       <AboutMe />
       <Experience />
       <MyCreations />
