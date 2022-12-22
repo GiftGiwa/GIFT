@@ -32,19 +32,33 @@ ul {
     /* overflow-x : auto; */
 }
 
-#github {
+#media {
     display: inline-block;
-    color: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
-    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
-    background-clip: text;
+}
+
+#github {
+    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF); */
+    color: #fffb00;
+    width: 48px;
+    height: 48px;
+    z-index: 15;
+    margin: 5px;
+    /* background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
 
 #linkedin {
     display: inline-block;
-    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    width: 48px;
+    height: 48px;
+}
+
+#email {
+    display: inline-block;
+    background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    width: 48px;
+    height: 48px;
+    /* color: #00FBFF */
 }
