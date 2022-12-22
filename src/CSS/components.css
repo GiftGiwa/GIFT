@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+html {
+    overflow-x:hidden;
+}
+
 .headings {
     font-family: Menlo;
     font-weight: 400;
@@ -31,12 +35,8 @@ span::selection {
     z-index:1;
     width: 100vw;
     height: 100vh;
+    
 }
-
-/* #root {
-    overflow: hidden;
-    height: 100%;
-} */
 
 .body {
     font-family: 'Inter', sans-serif;
@@ -44,14 +44,6 @@ span::selection {
     display:block;
     font-size: 16px;
     z-index: 8;
-
-    /*
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    */
 }
 
 .body::selection {

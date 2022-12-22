@@ -1,6 +1,6 @@
 .project {
-    width: calc((100vw - 400px - 60px) / 3);
-    height: calc((100vw - 400px - 60px) / 3);
+    width: calc((100vw - 600px - 60px) / 3);
+    height: calc((100vw - 600px - 60px) / 3);
     position: relative;
     display: inline-block;
 }

@@ -7,11 +7,13 @@
     padding-bottom: 30px;
     position: relative;
 }
+
 #experience-header {
     width: calc(100vw - 600px);
     position: relative;
     padding:20px;
 }
+
 #cards {
     display:grid;
 }
@@ -66,8 +68,8 @@
     #experience {
         width: calc(100vw - 50px);
     }
+
     #cards {
-        width: calc(100vw - 50px);
-        
+        width: calc(100vw - 50px);  
     }
 }
