@@ -14,10 +14,10 @@ function App() {
 
   return (
     <>
-      <Page />
+      {/* <Page /> */}
       <Navbar />
-      {/* <Spheres /> */}
-      <DecoBars />
+      <Spheres />
+      {/* <DecoBars /> */}
       <Frost />
       {/* <WIP /> */}
       <AboutMe />

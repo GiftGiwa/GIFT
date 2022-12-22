@@ -43,7 +43,7 @@
     width: 100%;
     left:0px;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     color: rgb(49, 49, 49);
     font-family: Inter;
     font-size:72px;
@@ -54,6 +54,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 
 /* Responsive Design Rules */
 
