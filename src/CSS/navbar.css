@@ -6,6 +6,7 @@
     width: 100vw;
     margin: auto;
     z-index:13;
+    /* overflow-x: scroll; */
 }
 
 h4 {
@@ -21,7 +22,7 @@ h4 {
 }
 
 h4::selection {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(108, 108, 108, 0);
     padding-left:5px;
 }
 
@@ -29,4 +30,21 @@ ul {
     display: inline-block;
     padding:auto;
     /* overflow-x : auto; */
+}
+
+#github {
+    display: inline-block;
+    color: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+#linkedin {
+    display: inline-block;
+    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }

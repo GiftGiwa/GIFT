@@ -86,4 +86,7 @@
         width: calc(100vw - 50px - 60px);
         height: calc(100vw - 50px - 60px);
     }
+    .desc {
+        display:none;
+    }
 }

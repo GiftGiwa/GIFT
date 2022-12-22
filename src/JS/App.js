@@ -16,8 +16,8 @@ function App() {
     <>
       {/* <Page /> */}
       <Navbar />
-      <Spheres />
-      {/* <DecoBars /> */}
+      {/* <Spheres /> */}
+      <DecoBars />
       <Frost />
       {/* <WIP /> */}
       <AboutMe />

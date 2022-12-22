@@ -20,7 +20,7 @@ function AboutMe () {
 
                         {/* <ProgrammingLanguages className="horizontal-center" id="technologies"/> */}
 
-                        <p className="body technologies">I started programming in my senior year of high school with Java in AP Computer Science A. After practicing a bit, I've expanded into other programming languages through my college coursework and self-studying. At the moment, I’ve worked with <span id="html">HTML</span>, <span id="css">CSS</span>, <span id="js">JavaScript</span>, <span id="java">Java</span>, <span id="c-sharp">C#</span>, <span id="python">Python</span>, and <span id="three-js">THREE.js</span> so far.</p>
+                        <p className="body technologies">I started programming in my senior year of high school with Java in AP Computer Science A. After practicing a bit, I've expanded into other programming languages through my college coursework and self-studying. At the moment, I’ve worked with <span id="html5">HTML</span>, <span id="css">CSS</span>, <span id="js">JavaScript</span>, <span id="java">Java</span>, <span id="c-sharp">C#</span>, <span id="python">Python</span>, and <span id="three-js">THREE.js</span> so far.</p>
 
                         {/* <p className="body">I'm currently taking Fundamentals of Computer Systems, Discrete Math, and Data Structures.</p> */}
 
