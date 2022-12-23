@@ -6,7 +6,7 @@
     width: 100vw;
     margin: auto;
     z-index:13;
-    /* overflow-x: scroll; */
+    height: 80px;
 }
 
 h4 {
@@ -19,6 +19,7 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:24px;
+    left:20px;
 }
 
 h4::selection {
@@ -29,7 +30,6 @@ h4::selection {
 ul {
     display: inline-block;
     padding:auto;
-    /* overflow-x : auto; */
 }
 
 #media {
@@ -37,28 +37,29 @@ ul {
 }
 
 #github {
-    /* background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF); */
-    color: #fffb00;
+    color: rgb(220, 234, 58);
     width: 48px;
     height: 48px;
-    z-index: 15;
     margin: 5px;
-    /* background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {color: rgb(220, 234, 58)}
+    50% {color: rgb(56, 247, 221)}
+	100% {color: rgb(220, 234, 58)}
 }
 
 #linkedin {
     display: inline-block;
-    background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    color: rgb(220, 234, 58);
     width: 48px;
     height: 48px;
 }
 
 #email {
     display: inline-block;
-    background: -webkit-linear-gradient(0deg, #FFE600, #00FBFF);
+    color: rgb(220, 234, 58);
     width: 48px;
     height: 48px;
-    /* color: #00FBFF */
 }

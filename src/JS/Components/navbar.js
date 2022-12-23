@@ -15,12 +15,13 @@ function Navbar() {
                 <li><a href="#experience">02  .experience</a></li>
                 <li><a href="#my-creations">03  .my-creations</a></li>
                 
-                <div id = "media">
-                    <GitHubIcon id = "github"></GitHubIcon>
-                    <LinkedInIcon id = "linkedin"></LinkedInIcon>
-                    <EmailOutlinedIcon id="email"></EmailOutlinedIcon>
-                </div>
             </ul>
+
+            <div id = "media">
+                <GitHubIcon id = "github"></GitHubIcon>
+                <LinkedInIcon id = "linkedin"></LinkedInIcon>
+                <EmailOutlinedIcon id="email"></EmailOutlinedIcon>
+            </div>
         </div>
     )
 }
