@@ -5,7 +5,7 @@ import ExperienceCard from "./experience_card"
 
 function Experience() {
 
-    const experience = [ // **to be filled over time
+    const experience = [ // **to be filled over time**
         { // sharp
             count: "01",
             company: "Sharp Performance",
@@ -22,17 +22,17 @@ function Experience() {
             companyColor: "#5cbcf2",
             position: "SWE Intern",
             data: "",
-            bullets: ["Program UI for BetterMeet Chrome extension, enabling employees of organizations to intuitively provide feedback on virtual meetings’ productivity.",
-            "Maintain AWS database employees’ form response analytics for 1,000 businesses.",
-            "Raise productivity of virtual meetings held by businesses and organizations by a projected 67%."]
+            bullets: ["Programmed UI for BetterMeet Chrome extension in JavaScript and CSS, enabling employees of organizations to intuitively provide feedback on virtual meetings’ productivity.",
+            "Coded data access from AWS cloud database containing analytics on employee feedback for 1,000 businesses using Flask.",
+            "Maintained goal achievement rate and reduced meeting times for organizations by 33% on average."]
         },
-        { // creative mechanics lab (?)
+        { // (?)
             count:"03",
-            company: "Creative Machines Lab",
-            position: "SWE",
+            company: "",
+            position: "SWE Intern",
             bullets: ["???", "???", "???"]
         },
-        {
+        { // (?)
             count:"04",
             company: "???",
             position: "???",
