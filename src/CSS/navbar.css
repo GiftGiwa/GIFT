@@ -6,7 +6,6 @@
     width: 100vw;
     margin: auto;
     z-index:13;
-    /* height: 80px; */
 }
 
 h4 {
@@ -41,7 +40,6 @@ ul {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-
 }
 
 #github {

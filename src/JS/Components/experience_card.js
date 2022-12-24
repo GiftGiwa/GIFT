@@ -6,8 +6,8 @@ function ExperienceCard(props) {
 
     return (
         <div style={{backgroundColor: props.color}} id="experience-card">
-            <h4 style={{color: props.bgcolor}}>{props.count}</h4>
-            <p className = "positions" ><span style={{color:props.companyColor}}>{props.company},</span> <br></br>{props.position}</p>
+            <h5 style={{color: props.bgcolor}}>{props.count}</h5>
+            <p className = "positions" ><span style={{color:props.companyColor}}>{props.company},</span><br></br>{props.position}</p>
             <p className = "description">{props.bullets[0]}</p>
             <p className = "description">{props.bullets[1]}</p>
             <p className = "description">{props.bullets[2]}</p>

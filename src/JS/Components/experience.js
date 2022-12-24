@@ -11,17 +11,17 @@ function Experience() {
             company: "Sharp Performance",
             companyColor: "#5cbcf2",
             position: "SWE Intern",
-            data: "",
-            bullets: ["Development of Sharp Performance, an Android/iOS compatible application that provides a plethora of cognitive performance exercises to the user to maintain mental fortitude while transitioning between high- and low-stress environments, based on methods delivered to U.S. Military Special Operations personnel.",
-            "Improved login time by 4+ seconds on average in the back-end login system using C# and MySQL in Unity.",
-            "Increased potential user base by 300% by app deployment to iOS devices"]
+            date: "",
+            bullets: ["Designed mobile application in Unity and C# with cognitive performance exercises to strengthen the user’s mental fortitude, based on methods delivered to U.S. Military Special Operations personnel.",
+            "Improved average login time by 4 seconds with back-end login system built in C# and MySQL.",
+            "Increased user base by 300% by extending compatibility to iOS devices."]
         },
         { // better-meet
             count: "02",
             company: "BetterMeet",
             companyColor: "#5cbcf2",
             position: "SWE Intern",
-            data: "",
+            date: "",
             bullets: ["Programmed UI for BetterMeet Chrome extension in JavaScript and CSS, enabling employees of organizations to intuitively provide feedback on virtual meetings’ productivity.",
             "Coded data access from AWS cloud database containing analytics on employee feedback for 1,000 businesses using Flask.",
             "Maintained goal achievement rate and reduced meeting times for organizations by 33% on average."]
