@@ -18,9 +18,9 @@ function Navbar() {
             </ul>
 
             <div id = "media">
-                <GitHubIcon id = "github"></GitHubIcon>
-                <LinkedInIcon id = "linkedin"></LinkedInIcon>
-                <EmailOutlinedIcon id="email"></EmailOutlinedIcon>
+                <a target="_blank" href = "https://github.com/GiftGiwa"><GitHubIcon id = "github"></GitHubIcon></a>
+                <a target="_blank" href = "https://www.linkedin.com/in/gift-g-426146166/"><LinkedInIcon id = "linkedin"></LinkedInIcon></a>
+                <a target="_blank" href = "https://mail.google.com/mail/u/0/?fs=1&to=gdg2131@columbia.edu&tf=cm"><EmailOutlinedIcon id="email"></EmailOutlinedIcon></a>
             </div>
         </div>
     )
