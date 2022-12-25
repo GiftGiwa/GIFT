@@ -44,7 +44,7 @@ function MyCreations() {
 
                 <div id = "projects">
 
-                    <a href="https://giftgiwa.github.io/Sudoku/sudoku.html" target = "_blank">
+                    <a href="https://giftgiwa.github.io/SUDOKU/" target = "_blank">
                         <Project project = "sudoku" projectDesc = "sudoku_desc" imageSource={sudoku} headerColor = "#4FC1FF" name = {info[0][0]} info = {info[0][1]}></Project>
                     </a>
                     <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} headerColor = "#FFE600" name = {info[1][0]} info = {info[1][1]}></Project>
