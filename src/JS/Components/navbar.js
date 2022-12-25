@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import "../../CSS/navbar.css"
 import "../../CSS/components.css"
 import GitHubIcon from '@mui/icons-material/GitHub';

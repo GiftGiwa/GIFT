@@ -9,16 +9,15 @@
 }
 
 #experience-header {
-    width: calc(100vw - 600px);
     position: relative;
-    padding:20px;
+    width:330px;
 }
 
 #cards {
     display:grid;
 }
 
-/* Experience Filler Div */
+/* Experience Filler Div (just an ellipsis as a palaceholder until I get more experience going) */
 
 #xp-filler {
     display:block;

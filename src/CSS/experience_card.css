@@ -62,4 +62,9 @@ h5 {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
    }
+
+    .description {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

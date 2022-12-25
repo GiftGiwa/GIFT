@@ -4,7 +4,7 @@
 
 #my-creations {
     display:block;
-    width: /* max(calc(1040px - 600px), */ calc(100vw - 600px);
+    width: calc(100vw - 600px);
     z-index:7;
     margin:0;
     padding-top: 50px;
@@ -13,7 +13,7 @@
 }
 
 #creations-header {
-    width: calc(100vw - 600px);
+    width: 390px;
     position: relative;
     padding-bottom: 20px;
 }

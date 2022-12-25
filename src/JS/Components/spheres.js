@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import * as THREE from "three" 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
-//import { RGBELoader } from "three/examples/js/loaders/RGBELoader.js"
 import "../../CSS/components.css"              
 
 class Spheres extends Component {
@@ -9,11 +8,9 @@ class Spheres extends Component {
 	componentDidMount() {
 
 		let time = 0.00
-
 		const scene = new THREE.Scene();
 		//scene.background = new THREE.Color(0xffffff);
 
-		console.log(window.screen.width);
 		const camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 )
 
 		camera.position.z = -30;
@@ -88,9 +85,6 @@ class Spheres extends Component {
 
 		scene.add(mesh);
 
-		// let light = new THREE.DirectionalLight( 0xffffff )
-		// scene.add(light)
-
 		let ambient = new THREE.AmbientLight( 0xffffff)
 		scene.add(ambient)
 
@@ -98,7 +92,7 @@ class Spheres extends Component {
 
 			requestAnimationFrame( animate );
 
-			time += 0.00001
+			time += 0.001
 
 			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
 

@@ -11,7 +11,6 @@ function MyCreations() {
     setTimeout(function () {
 
         let descriptions = document.querySelectorAll(".desc")
-
         const onMouseMove = (e) => {
 
             let bounds = document.getElementById("projects").getBoundingClientRect()
@@ -27,8 +26,8 @@ function MyCreations() {
                 })
             }) 
         }
-
         document.addEventListener('mousemove', onMouseMove)
+
     }, 50)
 
 
@@ -40,9 +39,7 @@ function MyCreations() {
     return (
         <div className = "horizontal-center" id="my-creations">
 
-            <div id="creations-header" className = "horizontal-center">
-                <h3 className="headings">.my-creations</h3>
-            </div>
+            <h3 className="headings" id="creations-header">.my-creations</h3>
 
             <div id = "projects-body">
 

@@ -43,9 +43,10 @@ function Experience() {
     return (
         <div className="horizontal-center" id = "experience">
             
-            <div id="experience-header" className = "horizontal-center">
+            {/* <div id="experience-header" className = "horizontal-center">
                 <h3 className="headings">.experience</h3>
-            </div>
+            </div> */}
+            <h3 className="headings" id = "experience-header">.experience</h3>
 
             <div id="cards">
                 
