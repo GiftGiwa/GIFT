@@ -10,6 +10,7 @@
     font-family: Inter;
     margin:0;
     margin-bottom:20px;
+    backdrop-filter: blur(7.5px);
 }
 
 #experience-card::selection {
