@@ -19,7 +19,7 @@ function Experience() {
         { // better-meet
             count: "02",
             company: "BetterMeet",
-            companyColor: "#5cbcf2",
+            companyColor: "#3ae0bf",
             position: "SWE Intern",
             date: "",
             bullets: ["Programmed UI for BetterMeet Chrome extension in JavaScript and CSS, enabling employees of organizations to intuitively provide feedback on virtual meetings’ productivity.",

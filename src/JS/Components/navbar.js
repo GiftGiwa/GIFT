@@ -11,9 +11,9 @@ function Navbar() {
         <div id = "navbar">
             <h4>GiftGiwa</h4>
             <ul>
-                <li><a href="#about-me">01  .about-me</a></li>
-                <li><a href="#experience">02  .experience</a></li>
-                <li><a href="#my-creations">03  .my-creations</a></li>
+                <li className = "sections"><a href="#about-me">01  .about-me</a></li>
+                <li className = "sections"><a href="#experience">02  .experience</a></li>
+                <li className = "sections"><a href="#my-creations">03  .my-creations</a></li>
                 
             </ul>
 

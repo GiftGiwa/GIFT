@@ -19,7 +19,6 @@ function App() {
       <Spheres />
       <DecoBars />
       <Frost />
-      {/* <WIP /> */}
       <AboutMe />
       <Experience />
       <MyCreations />

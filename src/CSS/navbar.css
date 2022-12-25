@@ -78,6 +78,35 @@ ul {
 
 @media only screen and (max-width: 820px) {
     #media {
-        top:10px;
+        top:30px;
+        right: 20px;
+    }
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    ul {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding: 0;
+    }
+    #navbar {
+        height: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 820px) {
+    .sections {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        left:0px;
+        font-size:12px;
     }
 }
