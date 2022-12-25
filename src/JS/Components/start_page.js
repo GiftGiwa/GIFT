@@ -12,7 +12,8 @@ function Page() {
                 <h2 className="intro">GiftGiwa</h2>
                 <p className="mono intro" id="SWE">software engineer.</p>
                 
-                <p className="mono intro" id="label">[click anywhere to proceed]</p>
+                <p className="mono intro" id="label">WELCOME!
+                [click anywhere to proceed]</p>
             </div>
 
         </div>

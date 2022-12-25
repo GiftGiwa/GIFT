@@ -38,7 +38,6 @@ function MyCreations() {
 
     return (
         <div className = "horizontal-center" id="my-creations">
-
             <h3 className="headings" id="creations-header">.my-creations</h3>
 
             <div id = "projects-body">
@@ -51,10 +50,9 @@ function MyCreations() {
                     <Project project = "personalSite" projectDesc = "personal_desc" imageSource={personal_site} headerColor = "#FFE600" name = {info[1][0]} info = {info[1][1]}></Project>
                     
                     <Filler bgcolor="rgba(255, 255, 255, 0.06)" /><Filler bgcolor="rgba(255, 255, 255, 0.04)"/><Filler bgcolor="rgba(255, 255, 255, 0.025)"/>
-
                 </div>
-
             </div>
+
         </div>
     )
 }

@@ -9,35 +9,24 @@ import Spheres from "./Components/spheres"
 import DecoBars from "./Components/deco_bars"
 import Frost from "./Components/frost"
 
-
 function App() {
 
-  const [showComponent1, setShowComponent1] = useState(false);
-  const [showComponent2, setShowComponent2] = useState(true);
-
-  const handleClick = () => {  
-    setShowComponent1(!showComponent1)
-    setShowComponent2(!showComponent2)
+  const [showComponent, setShowComponent] = useState(false);
+  // const handleClick = () => {  
+  //   console.log(document.getElementById("start").remove();
+  //   setShowComponent(!showComponent)
+  // } 
+  function handleClick() {
+    document.getElementById("start").remove()
+    setShowComponent(!showComponent)
   }
 
   return (
     <>
-      {/* <div onClick = {handleClick}>
+      <div onClick = {handleClick}>
         <Page />
-      </div> */}
-      
-      {/* {!showComponent2 && <Page />}
-      {showComponent1 && <>
-        <Navbar />
-        <Spheres />
-        <DecoBars />
-        <Frost />
-        <AboutMe />
-        <Experience />
-        <MyCreations />
-        <Credits />
-      </>} */}
-      
+      </div>
+      {showComponent && 
       <>
         <Navbar />
         <Spheres />
@@ -47,8 +36,18 @@ function App() {
         <Experience />
         <MyCreations />
         <Credits />
-      </>
+      </>}
       
+      {/* <>
+        <Navbar />
+        <Spheres />
+        <DecoBars />
+        <Frost />
+        <AboutMe />
+        <Experience />
+        <MyCreations />
+        <Credits />
+      </> */}
     </>
   )
 
